@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "next": "next dev",
+    "dev": "next dev",
     "build": "next build",
     "postbuild": "next-sitemap && node ./scripts/generators/html-sitemap.mjs && node ./scripts/duplicate-redirect-lint.mjs",
     "start": "next start",
