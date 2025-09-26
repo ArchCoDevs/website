@@ -1,0 +1,283 @@
+@use '../vars' as *;
+@use './link.scss' as *;
+@use '../colours' as col;
+@use '../typography.scss' as type;
+@use './dark-mode.scss' as *;
+@use 'focus-visible' as *;
+@use '../animations' as animate;
+@use 'sass:color';
+
+@mixin disabled-button() {
+  background-color: col.$action-disabled;
+  box-shadow: none;
+  color: col.$grey-700 !important;
+  cursor: default;
+  pointer-events: none;
+}
+
+@mixin button($bg-colour, $text-colour) {
+  @include type.button();
+
+  background-color: $bg-colour;
+  border-radius: $border-radius-lg;
+  color: $text-colour;
+  cursor: pointer;
+  outline: 0;
+  padding: padding(1) padding(2);
+  position: relative;
+  text-align: center;
+  transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: max-content;
+
+  &:not([disabled]) {
+    &:hover {
+      filter: brightness(125%);
+    }
+
+    &:active {
+      filter: brightness(90%);
+    }
+
+    &:focus-visible {
+      @include focus-visible();
+    }
+  }
+
+  &:disabled {
+    @include disabled-button();
+
+    border-color: transparent;
+  }
+}
+
+@mixin button-primary {
+  @include button(col.$secondary, col.$action-text);
+
+  &:not([disabled]) {
+    &:hover {
+      filter: brightness(200%);
+    }
+  }
+}
+
+@mixin button-secondary {
+  @include button(col.$light, col.$secondary);
+
+  border: 1px solid col.$secondary;
+
+  &:not([disabled]) {
+    &:hover {
+      filter: brightness(95%);
+    }
+  }
+}
+
+@mixin button-tertiary {
+  @include button(col.$action, col.$action-text);
+
+  &:not([disabled]) {
+    &:hover {
+      filter: brightness(140%);
+    }
+  }
+}
+
+@mixin button-quaternary {
+  @include button(col.$tertiary, col.$secondary);
+
+  &:not([disabled]) {
+    &:hover {
+      filter: brightness(110%);
+    }
+  }
+}
+
+@mixin button-transparent($bg-colour, $lighten: 50%) {
+  @include button(transparent, $bg-colour);
+
+  @include dark-mode() {
+    color: lighten($bg-colour, $lighten);
+
+    &:not([disabled]) {
+      &:hover {
+        background-color: rgba($bg-colour, 0.3);
+      }
+    }
+  }
+
+  &:not([disabled]) {
+    &:hover {
+      background-color: rgba($bg-colour, 0.2);
+      filter: unset;
+    }
+  }
+}
+
+@mixin button-create {
+  @include button(col.$action-create, col.$action-text);
+}
+
+@mixin button-destroy {
+  @include button(col.$action-destroy, col.$action-text);
+}
+
+@mixin button-circular {
+  // No need to include button() here, since it's it's an extra layer of
+  // styline on one of the
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+@mixin button-text {
+  @include link();
+
+  background-color: transparent;
+  color: currentColor;
+
+  &:active,
+  &:hover {
+    box-shadow: none;
+    color: currentColor;
+    // background-color: transparent;
+    text-decoration: underline;
+  }
+
+  &:focus {
+    background: transparent;
+    box-shadow: inset 0 0 1px col.$action-focus-bg;
+    color: col.$action-focus-bg;
+  }
+}
+
+@mixin button-text-create {
+  @include button-text();
+
+  color: darken(col.$action-create, 10%);
+
+  &:focus {
+    box-shadow: inset 0 0 1px col.$action-create-focus-bg;
+  }
+}
+
+@mixin button-text-destroy {
+  @include button-text();
+
+  color: col.$action-destroy;
+
+  &:focus {
+    box-shadow: inset 0 0 1px col.$action-destroy-focus-bg;
+  }
+}
+
+.button {
+  @include button-primary();
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: padding(1) padding(2) !important;
+  width: auto;
+
+  span {
+    align-items: center;
+    display: flex;
+    gap: spacing(0.8);
+  }
+
+  svg {
+    fill: col.$light;
+    height: 15px;
+    width: 15px;
+  }
+
+  &:focus-visible,
+  &:hover {
+    svg {
+      @include animate.wobble();
+    }
+  }
+}
+
+.button--secondary {
+  @include button-secondary();
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: padding(1) padding(4) !important;
+
+  span {
+    align-items: center;
+    display: flex;
+    gap: spacing(0.8);
+  }
+
+  svg {
+    fill: col.$secondary;
+    height: 15px;
+    width: 15px;
+  }
+
+  &:focus-visible,
+  &:hover {
+    svg {
+      @include animate.wobble();
+    }
+  }
+}
+
+.button--tertiary {
+  @include button-tertiary();
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: padding(1) padding(4) !important;
+
+  span {
+    align-items: center;
+    display: flex;
+    gap: spacing(0.8);
+  }
+
+  svg {
+    fill: col.$light;
+    height: 15px;
+    width: 15px;
+  }
+
+  &:focus-visible,
+  &:hover {
+    svg {
+      @include animate.wobble();
+    }
+  }
+}
+
+.button--quaternary {
+  @include button-quaternary();
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: padding(1) padding(4) !important;
+
+  span {
+    align-items: center;
+    display: flex;
+    gap: spacing(0.8);
+  }
+
+  svg {
+    fill: col.$secondary;
+    height: 15px;
+    width: 15px;
+  }
+
+  &:focus-visible,
+  &:hover {
+    svg {
+      @include animate.wobble();
+    }
+  }
+}

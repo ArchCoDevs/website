@@ -1,0 +1,67 @@
+.form fieldset {
+  column-gap: spacing(1);
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: margin(2);
+  padding: 0;
+  row-gap: spacing(1.5);
+
+  @include util.mq(bp.$medium-small) {
+    grid-template-columns: 1fr 1fr;
+
+    > span:first-of-type {
+      grid-column: 1 / span 2;
+    }
+  }
+}
+
+.page-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign-out-link {
+  @include util.button-primary();
+}
+
+.form > div {
+  margin-left: 0;
+  margin-top: margin(2);
+}
+
+.my-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: padding(2) 0;
+  row-gap: spacing(0.5);
+  width: 100%;
+
+  @include util.mq(bp.$medium-small) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.actions {
+  align-items: center;
+  display: grid;
+  gap: spacing(2);
+  grid-template-columns: auto auto 1fr;
+  justify-content: start;
+  width: 100%;
+}
+
+.delete-account {
+  justify-self: end;
+}
+
+.property-list {
+  margin-top: margin(2);
+}
+
+.reset-password-link {
+  @include util.link();
+}

@@ -1,0 +1,134 @@
+.master-button {
+  display: grid;
+  min-width: 200px;
+  place-items: center;
+  position: relative;
+}
+
+.button-primary {
+  @include util.button-primary;
+}
+
+.button-secondary {
+  @include util.button-secondary;
+}
+
+.button-tertiary {
+  @include util.button-tertiary;
+}
+
+.button-quaternary {
+  @include util.button-quaternary;
+}
+
+.button-primary-transparent {
+  @include util.button-transparent(col.$primary-darker, 40%);
+}
+
+.button-secondary-transparent {
+  @include util.button-transparent(col.$secondary);
+}
+
+.button-tertiary-transparent {
+  @include util.button-transparent(col.$tertiary, 25%);
+}
+
+.button-create {
+  @include util.button-create;
+}
+
+.button-create-transparent {
+  @include util.button-transparent(col.$action-create, 20%);
+}
+
+.button-destroy {
+  @include util.button-destroy;
+}
+
+.button-destroy-transparent {
+  @include util.button-transparent(darken(col.$action-destroy, 10%), 20%);
+}
+
+.button-primary-link {
+  @include util.button-text;
+
+  min-width: unset;
+}
+
+.button-create-link {
+  @include util.button-text-create;
+
+  min-width: unset;
+}
+
+.button-destroy-link {
+  @include util.button-text-destroy;
+
+  min-width: unset;
+}
+
+.shape-circle {
+  @include util.button-circular;
+
+  min-width: unset;
+}
+
+.shape-squared {
+  border-radius: $border-radius;
+  min-width: unset;
+}
+
+.icon-none {
+  :is(svg, .icon, img, picture) {
+    display: none;
+  }
+}
+
+.icon-only span {
+  display: grid;
+  gap: 0;
+  min-width: unset;
+  padding: 0;
+  place-items: center;
+}
+
+.icon-left span,
+.icon-right span {
+  align-items: center;
+  display: grid;
+  gap: spacing(0.5);
+  grid-template-columns: auto auto;
+}
+
+.icon-right span {
+  :is(svg, .icon, img, picture) {
+    order: 2;
+  }
+}
+
+.icon-only svg,
+.icon-left svg,
+.icon-right svg {
+  height: 1em;
+  width: 1em;
+}
+
+// The error to display if the user doesn't add an onClick or a href prop
+.error {
+  color: col.$danger;
+  font-weight: bold;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.small {
+  column-gap: spacing(0.7);
+  line-height: inherit;
+  padding: padding(0.5) padding(1);
+}
+
+.full-width {
+  width: 100%;
+}

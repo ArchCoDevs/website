@@ -1,0 +1,261 @@
+@mixin field-panel {
+  background-color: col.$main-panel-bg;
+  border: 1px solid col.$input-border;
+  padding: padding(2);
+
+  @include util.mq(bp.$medium) {
+    padding: padding(2) padding(3);
+  }
+}
+
+.primary-search {
+  align-items: center;
+  display: grid;
+  gap: spacing(1);
+  padding-top: spacing(1);
+}
+
+.advanced-search {
+  container-type: inline-size;
+  height: 100%;
+  position: relative;
+  z-index: 1000;
+}
+
+.main-search-btn {
+  width: 100%;
+
+  @include util.mq(bp.$medium) {
+    width: auto;
+  }
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  gap: spacing(1);
+
+  @include util.mq(bp.$medium) {
+    flex-direction: row;
+  }
+}
+
+.search-header {
+  @include type.input-label();
+}
+
+.filter-toggle {
+  @include util.focus-visible();
+
+  align-items: center;
+  border: 1px solid col.$input-border;
+  border-radius: $border-radius;
+  cursor: pointer;
+  display: grid;
+  gap: spacing(0.9);
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  min-width: 0;
+  padding: padding(1.2) padding(1);
+  width: 100%;
+
+  @include util.mq(bp.$medium) {
+    border: 0;
+    width: fit-content;
+  }
+
+  svg {
+    fill: col.$primary;
+    height: 15px;
+    width: 15px;
+  }
+
+  &::after {
+    background-color: col.$primary;
+    clip-path: polygon(0 10%, 19% 10%, 50% 67%, 82% 10%, 100% 10%, 50% 99%);
+    content: '';
+    height: 7px;
+    transition: transform 0.3s ease-in-out;
+    width: 13px;
+    z-index: 2;
+  }
+
+  &.open::after {
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    background-color: col.$main-panel-bg;
+  }
+}
+
+.filter-icon {
+  fill: col.$primary;
+  height: 15px;
+  width: 15px;
+}
+
+.bottom-section {
+  display: grid;
+  gap: spacing(2);
+  grid-template-columns: 1fr;
+  padding: 0;
+
+  @include util.mq(bp.$medium) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  > div {
+    @include field-panel();
+
+    margin-bottom: 0;
+  }
+}
+
+.checkbox-group {
+  @include field-panel();
+
+  margin-bottom: margin(2) !important;
+
+  .fieldset {
+    display: grid;
+    flex-wrap: wrap;
+    gap: spacing(2);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .label {
+    font-weight: 400;
+  }
+
+  .legend {
+    @include util.base-input-label();
+
+    margin-bottom: margin(2);
+  }
+}
+
+.two-up {
+  > div {
+    display: grid;
+    gap: spacing(1);
+    grid-template-columns: 1fr 1fr;
+    margin-left: -2px;
+
+    > div {
+      margin-bottom: 0;
+    }
+  }
+
+  .label {
+    @include type.input-label();
+
+    display: block;
+    margin-bottom: margin(1);
+  }
+}
+
+.buttons {
+  background-color: col.$main-panel-bg;
+  border: 1px solid col.$input-border;
+  display: grid;
+  gap: spacing(2);
+  grid-template-columns: 1fr 1fr;
+  padding: padding(1.5) padding(1);
+  position: sticky;
+  top: 90px;
+  z-index: 9999;
+
+  @include util.mq(bp.$medium) {
+    top: 10px;
+
+    &::before {
+      background-color: col.$main-panel-bg;
+      content: '';
+      height: 10px;
+      left: -1px;
+      position: absolute;
+      top: -11px;
+      width: calc(100% + 2px);
+      z-index: 9999;
+    }
+  }
+
+  &.in-map {
+    top: 10px;
+
+    &::before {
+      background-color: col.$main-panel-bg;
+      content: '';
+      height: 10px;
+      left: -1px;
+      position: absolute;
+      top: -11px;
+      width: calc(100% + 2px);
+      z-index: 9999;
+    }
+  }
+
+  .reset {
+    border: 1px solid col.$input-border;
+    margin-bottom: 0;
+    width: 100%;
+
+    @include util.mq(bp.$medium) {
+      width: auto;
+    }
+
+    svg {
+      fill: col.$primary;
+    }
+  }
+
+  .reset {
+    padding: padding(0.5) padding(2);
+  }
+
+  .apply {
+    margin-bottom: 0;
+    padding: padding(0.5) padding(4);
+    width: 100%;
+
+    @include util.mq(bp.$medium) {
+      width: auto;
+    }
+  }
+}
+
+.slide-panel {
+  background-color: #fbfbfb;
+  height: 0;
+  opacity: 0;
+  position: relative;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all 0.25s ease-in-out;
+
+  &.visible {
+    height: fit-content;
+    // Not supported in most browsers but will be in the future
+    height: calc-size(auto);
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+@container (max-width: 460px) {
+  .bottom-section {
+    grid-template-columns: 1fr;
+  }
+
+  .buttons {
+    .reset,
+    .apply {
+      padding: padding(0.5) padding(1);
+    }
+  }
+}

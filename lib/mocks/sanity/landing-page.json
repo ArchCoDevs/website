@@ -1,0 +1,36 @@
+[
+  {
+    "_originalId": "drafts.6c08e732-3055-4a3e-a78e-b9c302d41910",
+    "metadata": {
+      "_type": "metadata",
+      "title": "Another test"
+    },
+    "_rev": "ece6d218-3f7a-49f2-a124-e525bcbd9a65",
+    "_type": "landingPage",
+    "heroImage": {
+      "_type": "brandfolderImage",
+      "alt_text": "DON BIGOTE.039",
+      "width": 1152,
+      "id": "q8q9hzppcfq5rs3699kpk67p",
+      "url": "https://cdn.bfldr.com/IJXUD54I/as/rh5j8v4s9kpsbnp8jvr67jfr/DON_BIGOTE039?auto=webp&format=png",
+      "height": 768
+    },
+    "_id": "6c08e732-3055-4a3e-a78e-b9c302d41910",
+    "title": "Another test",
+    "_updatedAt": "2024-09-05T18:43:23Z",
+    "content": [
+      {
+        "_key": "38ba9965ac97",
+        "body": "And this is the body text",
+        "title": "This is some text",
+        "_type": "plainText"
+      }
+    ],
+    "_createdAt": "2024-09-05T08:44:06Z",
+    "slug": {
+      "current": "ash-test",
+      "_type": "slug"
+    },
+    "pageIntroText": "This is a test page"
+  }
+]

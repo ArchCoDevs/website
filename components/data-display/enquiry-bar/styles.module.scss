@@ -1,0 +1,18 @@
+.enquiry-bar {
+  align-items: center;
+  background-color: col.$grey-200;
+  border-radius: $border-radius;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 3fr 1fr;
+  margin-bottom: margin(2);
+  padding: padding(1) padding(2);
+
+  p {
+    margin-bottom: 0 !important;
+  }
+
+  button {
+    width: 100%;
+  }
+}

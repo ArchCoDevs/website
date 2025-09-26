@@ -1,0 +1,45 @@
+.breadcrumbs {
+  font-size: type.$small-text-size;
+  padding: padding(2) padding(3) 0;
+
+  @include util.mq(bp.$medium-small) {
+    padding-left: padding(6);
+  }
+
+  ol {
+    align-items: center;
+    column-gap: spacing(0.25);
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    row-gap: spacing(1);
+  }
+
+  a {
+    color: col.$body-text;
+    font-size: type.$small-text-size;
+    text-decoration: underline;
+  }
+
+  .current-page {
+    color: col.$grey-600;
+    pointer-events: none;
+    text-decoration: none;
+  }
+
+  .separator {
+    display: flex;
+    margin-left: margin(0.2);
+    margin-right: margin(0.2);
+    user-select: none;
+
+    svg {
+      display: inline-block;
+      fill: col.$primary;
+      height: 13px;
+      width: 13px;
+    }
+  }
+}

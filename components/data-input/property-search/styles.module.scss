@@ -1,0 +1,40 @@
+.property-search {
+  width: auto;
+}
+
+// Remove the default borders set by InputFactory
+.input,
+.select {
+  margin-bottom: 0;
+  padding: 0;
+
+  input,
+  > div {
+    background-color: transparent;
+    border: 0 !important;
+    border-radius: 0;
+  }
+}
+
+.select > div {
+  &::before {
+    border-left: 1px solid lighten(col.$input-border, 20%);
+    content: '';
+    height: 75%;
+    left: 0;
+    position: relative;
+    position: absolute;
+    top: 4px;
+    width: 1px;
+  }
+}
+
+.input-container {
+  @include util.base-input;
+
+  align-items: center;
+  display: grid;
+  gap: 0;
+  grid-template-columns: auto 115px;
+  padding: 0;
+}

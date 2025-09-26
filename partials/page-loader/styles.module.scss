@@ -1,0 +1,19 @@
+.page-loader {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: spacing(2);
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+
+  svg {
+    height: 200px;
+    width: 200px;
+
+    g {
+      fill: col.$primary;
+      stroke: col.$primary;
+    }
+  }
+}

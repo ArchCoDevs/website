@@ -1,0 +1,86 @@
+.vertical-tabs {
+  display: flex;
+  flex-direction: row;
+  gap: spacing(2);
+}
+
+.tabs {
+  display: none;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @include util.mq(bp.$medium-small) {
+    display: flex;
+  }
+
+  .tab {
+    cursor: pointer;
+    margin: 0;
+    padding: 1rem;
+    width: 200px;
+
+    &.active {
+      font-weight: bold;
+    }
+
+    a {
+      align-items: start;
+      color: col.$body-text;
+      display: grid;
+      gap: spacing(0.5);
+      grid-template-columns: 15px auto;
+      line-height: 1.2;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      svg {
+        fill: col.$primary;
+        height: 13px;
+        // To align the icon with the text with line-height 1.2
+        margin-top: 3px;
+        transform: rotate(90deg);
+        width: 13px;
+      }
+    }
+  }
+}
+
+.content {
+  flex: 1;
+  padding: 1rem;
+
+  @include util.mq(bp.$medium-small) {
+    .tab-content {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+
+  .rich-text {
+    p {
+      @include type.body-text();
+    }
+
+    h2 {
+      @include type.heading-small();
+
+      font-weight: 900;
+      margin-bottom: margin(2);
+    }
+
+    h3 {
+      @include type.body-text();
+
+      font-weight: 900;
+      margin-bottom: margin(2);
+    }
+  }
+}

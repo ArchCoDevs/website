@@ -1,0 +1,22 @@
+<Meta title="Docs" />
+
+# Partials
+
+Partials can be thought of as building blocks for pages or even reusable pages
+in their own right.
+
+Partials, like templates and pages are components which are allowed to have full access
+to the application context.
+
+Unless there are special requirements for a page which require custom documentation
+you do not need to create a [partialname].mdx file for the page.
+
+## Partial as a page
+
+Partials can be used as pages in their own right. This is useful for creating
+reusable pages which can be used in multiple places in the app, e.g. a
+loading page or page which cannot be navigated to directly (e.g. an error page)
+
+If you are using a partial as a resuable page, you should ensure that it extends
+the `BaseLayout` template. This will ensure that the page has the correct
+styling and headers.

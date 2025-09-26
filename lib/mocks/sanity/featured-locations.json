@@ -1,0 +1,231 @@
+{
+  "name": "Brixton",
+  "_id": "3ba70f03-7ec0-4bc0-8c64-a54d4c608d32",
+  "_updatedAt": "2024-08-09T15:59:10Z",
+  "_originalId": "3ba70f03-7ec0-4bc0-8c64-a54d4c608d32",
+  "cardData": {
+    "thumbnailImage": {
+      "alt_text": "Japanese Canteen | Tower Hamlets",
+      "id": "pckvcgnnrcjt4wnh394hsmz",
+      "url": "https://cdn.bfldr.com/IJXUD54I/as/b98mtnnqcsjhgww29c8c399/Japanese_Canteen__Tower_Hamlets?auto=webp&format=png"
+    },
+    "description": "Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.\nVoluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et\nculpa duis. "
+  },
+  "contactUsCTATitle": "Units available to rent",
+  "metadata": {
+    "_type": "metadata",
+    "description": "We have a range of affordable spaces to rent in Brixton that can be used flexibly for a variety of activities or needs.",
+    "title": "Brixton"
+  },
+  "featuredProperties": {
+    "_type": "featuredProperties",
+    "title": "Featured Properties",
+    "properties": ["VXH02212", "QRP01532", "VXH02608"]
+  },
+  "slug": {
+    "current": "brixton",
+    "_type": "slug"
+  },
+  "contactUsCTADescription": "Take a look at what we have available below and enquire today if you think one of the spaces may be perfect for your business.",
+  "_type": "featuredLocations",
+  "contentCardHeading": "Live, work, thrive in Brixton",
+  "locationImage": {
+    "height": 1600,
+    "alt_text": "Copy of Development sticker image",
+    "width": 2400,
+    "id": "sqmrtbk38z4qbnshhhnxbbfz",
+    "url": "https://cdn.bfldr.com/IJXUD54I/as/4qbzj4w544gfbc4k4nn9xkk/Copy_of_Development_sticker_image?auto=webp&format=png"
+  },
+  "radius": 10,
+  "_rev": "Fhd02XoXdQgeoPyY6niZxq",
+  "contentCards": [
+    {
+      "_key": "567f36c51b68",
+      "isFeatured": false,
+      "title": "Renting in Brixton",
+      "image": {
+        "alt_text": "Sama Bankside Internal 2  | Southwark",
+        "id": "886xkjr9wqzmnk5g8k8zvr",
+        "url": "https://cdn.bfldr.com/IJXUD54I/as/h5w64v689wtn6kb4kjv4t6q/Sama_Bankside_Internal_2___Southwark?auto=webp&format=png"
+      },
+      "ctaType": "link",
+      "_type": "contentCard",
+      "linkUrl": "https://www.bbc.co.uk",
+      "linkText": "Read more"
+    },
+    {
+      "_key": "0ea96816b09d4eb75e19669fc9c8bc92",
+      "linkUrl": "https://www.bbc.co.uk",
+      "image": {
+        "alt_text": "Sama Bankside External",
+        "id": "332fcb2vtznq8p7q5fg37pwh",
+        "url": "https://cdn.bfldr.com/IJXUD54I/as/9rq6mwj9tjgbphs52s2p/Sama_Bankside_External?auto=webp&format=png"
+      },
+      "_type": "contentCard",
+      "linkText": "Read more",
+      "title": "Spice up your live in Brixton",
+      "ctaType": "link",
+      "isFeatured": false,
+      "content": "Rent this vibrant bar space now! The refurbished arches connect shops on Southwark Road to Southwark Village traders."
+    },
+    {
+      "_type": "contentCard",
+      "linkUrl": "http://www.bbc.co.uk",
+      "linkText": "Apply now",
+      "_key": "c303e6a8196e",
+      "isFeatured": true,
+      "title": "Discounts for small business customers",
+      "content": "Up to 100 small business customers can now get discounted membership to FSB, the UK's voice for small businesses",
+      "ctaType": "button"
+    },
+    {
+      "ctaType": "link",
+      "linkUrl": "http://www.bbc.co.uk",
+      "isFeatured": false,
+      "image": {
+        "alt_text": "Row of Arches",
+        "id": "wxcqwn3mv3w5jffvx55g63xf",
+        "url": "https://cdn.bfldr.com/IJXUD54I/as/tr73f9f8kj5jspxqkqg88trq/Row_of_Arches?auto=webp&format=png"
+      },
+      "linkText": "Read more",
+      "content": "Southwark Arches has been home to independent shops, cafes and restaurants for over 150 years.",
+      "_type": "contentCard",
+      "title": "So much to do...",
+      "_key": "13b8532df51cc17941b8fdde92dd056d"
+    }
+  ],
+  "title": "Brixtop",
+  "_createdAt": "2024-07-23T12:05:10Z",
+  "textArea": {
+    "_type": "richText",
+    "richText": [
+      {
+        "style": "normal",
+        "_key": "e52deff5963d",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "bac3d48555d10",
+            "_type": "span",
+            "marks": ["strong"],
+            "text": "We have a range of affordable spaces to rent in Southwark that can be used flexibly for a variety of activities or needs. Our spaces are:"
+          }
+        ],
+        "_type": "block"
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "_key": "d42e3b8fb2ff",
+        "listItem": "bullet",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "Conveniently located near main transport links, with easy access to central London",
+            "_key": "d585d73c4ea40"
+          }
+        ],
+        "level": 1
+      },
+      {
+        "_key": "d4f4fa0baa01",
+        "listItem": "bullet",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "Either new or recently refurbished",
+            "_key": "7798fc49c6fc"
+          }
+        ],
+        "level": 1,
+        "_type": "block",
+        "style": "normal"
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "_key": "3f5b01ce0f0b",
+        "listItem": "bullet",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "cf1ec5583811",
+            "_type": "span",
+            "marks": [],
+            "text": "Suitable for many different business types, including industrial businesses, cafes, creative studios, storage and other light industrial uses"
+          }
+        ],
+        "level": 1
+      },
+      {
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "Can be used flexibly for a variety of activities or needs",
+            "_key": "348583ead582"
+          }
+        ],
+        "level": 1,
+        "_type": "block",
+        "style": "normal",
+        "_key": "1f3fa5b249a7",
+        "listItem": "bullet",
+        "markDefs": []
+      }
+    ]
+  },
+  "keystoneSearchTerm": "brixton",
+  "composableContentHeading": "Heading title goes here",
+  "content": [
+    {
+      "linkText": "Read more about the development",
+      "_key": "05078f9a1104",
+      "title": "America Street development",
+      "content": "Work started earlier this year to redevelop four railway arches in Southwark. ",
+      "image": {
+        "url": "https://cdn.bfldr.com/IJXUD54I/as/w3bgbwjnts9rmzjfpmp3c96g/Camden_Town_Brewery__Camden?auto=webp&format=png",
+        "alt_text": "Camden Town Brewery | Camden",
+        "id": "5jq84m83hrkh298bxbskpqkp"
+      },
+      "ctaType": "button",
+      "_type": "horizontalContentCard",
+      "linkUrl": "https://www.bbc.co.uk"
+    },
+    {
+      "image": {
+        "alt_text": "Sama Bankside Internal | Southwark",
+        "id": "bthmrpgj5rkm99vnsbbqw89",
+        "url": "https://cdn.bfldr.com/IJXUD54I/as/hqc4g9srtb4p2x2w37hqg5x/Sama_Bankside_Internal__Southwark?auto=webp&format=png"
+      },
+      "ctaType": "button",
+      "_type": "horizontalContentCard",
+      "linkUrl": "https://www.bbc.co.uk",
+      "linkText": "Read more about the development",
+      "_key": "282def3ac059bc4aa200c815608bec54",
+      "content": "Work started earlier this year to redevelop four railway arches in Southwark. ",
+      "title": "America Street development",
+      "swapSides": true
+    },
+    {
+      "ctaText": "Read more",
+      "dark": true,
+      "buttonColour": "teal",
+      "_key": "acffa2e1d90c",
+      "image": {
+        "id": "h6qt9zxfxfrhvp6v87hgpk",
+        "url": "https://cdn.bfldr.com/IJXUD54I/as/k8h45nnn2chzm9vxx2rxmf8/Forest_Internal__Deptford?auto=webp&format=png",
+        "alt_text": "Forest, Internal | Deptford"
+      },
+      "_type": "imageRow",
+      "content": "Anatolian Turkish restaurant Ev call Southwark their home. Read more about what makes Southwark the perfect place for their restaurant to thrive.",
+      "ctaUrl": "https://www.bbc.co.uk",
+      "overlayText": true,
+      "title": "EV"
+    }
+  ]
+}

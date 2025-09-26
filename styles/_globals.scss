@@ -1,0 +1,62 @@
+/**
+ Establishes a set of global styles that are used throughout the application.
+*/
+
+@use 'vars' as *;
+@use 'colours' as col;
+@use 'typography' as type;
+
+::selection {
+  /* Code for Firefox */
+  background: col.$primary;
+  color: col.$light;
+}
+
+html {
+  background: col.$bg;
+}
+
+// NOTE: If you update the colours on the body tag,
+// you will need to update the colours in the `.sb-show-main`
+// class in .storybook/preview-head.html
+// to match. (for both light and dark mode)
+body {
+  background: col.$bg;
+  color: col.$body-text;
+  font-family: Arial, sans-serif;
+  font-size: type.$body-text-size;
+  line-height: 1;
+
+  p:not(:last-child) {
+    margin-bottom: $paragraph-spacing;
+  }
+}
+
+// Makes application full height.
+/* stylelint-disable-next-line selector-max-id -- This is a Next.js id and can't be changed.*/
+#__next {
+  display: grid;
+  height: 100vh;
+}
+
+main {
+  padding: padding(2);
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: margin(1);
+  }
+
+  a {
+    color: col.$primary;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

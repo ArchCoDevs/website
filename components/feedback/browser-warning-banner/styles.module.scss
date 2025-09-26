@@ -1,0 +1,35 @@
+.browser-warning {
+  background-image:
+    repeating-linear-gradient(
+      -33deg,
+      darken(col.$danger, 20),
+      darken(col.$danger, 20) 20px,
+      darken(col.$danger, 25) 20px,
+      darken(col.$danger, 25) 40px
+    );
+  color: col.$light;
+  font-size: type.$large-text-size;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: padding(1) padding(2);
+  position: relative;
+  text-align: center;
+}
+
+.icon {
+  display: inline-block;
+  margin-right: margin(1);
+  vertical-align: middle;
+}
+
+.link {
+  color: col.$light;
+  display: block;
+  margin-top: margin(1);
+  text-decoration: underline;
+
+  @include util.mq(bp.$medium) {
+    display: inline-block;
+    margin: 0;
+  }
+}

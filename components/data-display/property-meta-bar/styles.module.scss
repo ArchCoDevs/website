@@ -1,0 +1,60 @@
+.property-meta-bar {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: spacing(1);
+
+  @include util.mq(bp.$medium-small) {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+
+    &.no-brochure {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+.icon {
+  fill: col.$primary;
+  height: 16px;
+  width: 16px;
+}
+
+.use,
+.size,
+.brochure-link {
+  align-items: center;
+  display: flex;
+  gap: spacing(1);
+  width: 100%;
+}
+
+.size {
+  @include util.mq(bp.$medium-small) {
+    border-left: 1px solid col.$grey-600;
+    justify-content: center;
+  }
+}
+
+.no-brochure .size {
+  @include util.mq(bp.$medium-small) {
+    justify-content: flex-end;
+  }
+}
+
+.brochure-link {
+  color: col.$body-text;
+
+  @include util.mq(bp.$medium-small) {
+    border-left: 1px solid col.$grey-600;
+    justify-content: flex-end;
+  }
+
+  &:hover {
+    text-decoration: underline;
+
+    .icon {
+      @include animate.wobble();
+    }
+  }
+}

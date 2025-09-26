@@ -1,0 +1,34 @@
+// This file overrides default styles as a default style is
+// overridden, the plugin that the style comes from will be highlighted with a
+// section heading.
+
+// Anything below this point does not need to conform
+// to the kebab-case class name pattern (only put 3rd party classes here)
+
+/* stylelint-disable selector-class-pattern */
+
+/**
+* Storybook
+*/
+
+@use './utilities/link.scss' as link;
+@use './colours.scss' as col;
+
+:global .markdown-body ul {
+  list-style: disc;
+}
+
+.pac-container {
+  min-width: 305px !important;
+}
+
+.CookieConsent {
+  color: col.$body-text-inverse;
+}
+
+.CookieConsent a {
+  @include link.link();
+
+  color: col.$body-text-inverse;
+  text-decoration: underline;
+}

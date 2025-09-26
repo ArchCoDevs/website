@@ -1,0 +1,45 @@
+.press-office-card {
+  @include util.card();
+
+  background-color: col.$tertiary;
+  container-type: inline-size;
+  grid-template-rows: fit-content auto;
+
+  @include util.mq(bp.$medium-small) {
+    text-align: unset;
+  }
+}
+
+.top {
+  margin-top: margin(3);
+  padding: padding(2) padding(4);
+  position: relative;
+
+  .title {
+    @include type.heading-large();
+
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 1.2;
+    margin-bottom: margin(1);
+  }
+}
+
+.bottom {
+  display: grid;
+  flex-direction: column;
+  gap: spacing(2);
+  justify-content: center;
+  padding: padding(2) padding(4) padding(5);
+  width: 100%;
+
+  > a {
+    width: 100%;
+  }
+}
+
+.content {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}

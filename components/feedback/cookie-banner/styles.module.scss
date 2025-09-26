@@ -1,0 +1,19 @@
+.buttons {
+  display: flex;
+  gap: spacing(2);
+  justify-content: flex-start;
+}
+
+.cookie-banner {
+  background-color: col.$light;
+  border-top: 5px solid col.$primary;
+  bottom: 0;
+  display: flex;
+  filter: drop-shadow(0 -5px 10px rgba(0, 0, 0, 0.1));
+  flex-direction: column;
+  justify-content: space-between;
+  left: 0;
+  padding: padding(2);
+  position: fixed;
+  right: 0;
+}

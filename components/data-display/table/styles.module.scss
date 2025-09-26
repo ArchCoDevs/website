@@ -1,0 +1,12 @@
+.table {
+  background-color: col.$grey-warm;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: col.$grey-900;
+  margin-bottom: margin(1);
+  width: 100%;
+}
+
+.striped tr:nth-child(odd) td {
+  background-color: col.$grey-200;
+}

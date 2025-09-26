@@ -1,0 +1,164 @@
+import * as Stories from './component-factory.stories';
+
+import { ComponentFactory } from './index';
+
+<Meta of={Stories} />
+
+<Title />
+
+<Description />
+
+It is recommended that you use the `ComponentFactory` component to render your components whenever you
+need to render a composable component area.
+
+<Primary />
+
+<Tip>
+  If you want to add support for another component type, see 'Adding new input
+  types' below.
+</Tip>
+
+For examples on how to implement the various components, please see below.
+
+## Component types
+
+### PlainText
+
+<Canvas withToolbar sourceState="shown" of={Stories.PlainText} />
+
+### CardSection
+
+<Canvas withToolbar sourceState="shown" of={Stories.TwoCardSection} />
+<Canvas withToolbar sourceState="shown" of={Stories.ThreeCardSection} />
+<Canvas withToolbar sourceState="shown" of={Stories.FourCardSection} />
+
+### ImageRow
+
+<Canvas withToolbar sourceState="shown" of={Stories.ImageRow} />
+
+### HorizontalContentCard
+
+<Canvas withToolbar sourceState="shown" of={Stories.HorizontalContentCard} />
+<Canvas
+  withToolbar
+  sourceState="shown"
+  of={Stories.HorizontalContentCardNoImage}
+/>
+
+## Using the component factory
+
+The component factory expects three props:
+
+- componentType: The type of component to render.
+- componentProps: The properties to pass to the component.
+- allowedComponents: An array of allowed component types.
+
+### Allowed components
+
+You must specify an array of all of the components that the instance of the component factory is allowed to render. This is to prevent the component factory from rendering any arbitrary component.
+
+Example:
+
+```jsx
+const allowedComponents = [
+  'plainText',
+  'twoCardSection',
+  'threeCardSection',
+  'fourCardSection',
+  'imageRow',
+  'horizontalContentCard'
+];
+```
+
+Any components that are not in the `allowedComponents` array will not be rendered and will display a warning in the console.
+
+How you implement the factory is up to you and your use case. You can use the factory in a loop to render a list of components, or you can use it to render a single component.
+
+Here is an example of a loop:
+
+```jsx
+{
+  components?.map((component, index) => (
+    <ComponentFactory
+      key={index}
+      componentType={component._type}
+      componentProps={component}
+      allowedComponents={allowedComponents}
+    />
+  ));
+}
+```
+
+In this example the data for `componentType` and `componentProps` are coming from an API response which looks like this:
+
+```json
+"content": [
+    {
+      "_type": "imageRow",
+      "_key": "4d7ec3e17fe4",
+      "content": "Placeholder copy",
+      "linkText": "placeholder copy",
+      "layout": "standard",
+      "title": "Placeholder title",
+      "ctaType": "button",
+      "buttonColor": "teal",
+      "linkUrl": "https://www.example.com",
+      "darkMode": true,
+      "image": {
+        "alt_text": "A description of the image",
+        "id": "1",
+        "url": "placeholder.jpg"
+      }
+    },
+    {
+      "swapSides": false,
+      "_type": "horizontalContentCard",
+      "linkUrl": "https://www.example.com",
+      "_key": "9de32f7d44ce",
+      "content": "Placeholder copy",
+      "image": {
+        "alt_text": "A description of the image",
+        "id": "2",
+        "url": "placeholder.jpg"
+      },
+      "ctaType": "link",
+      "linkText": "Read more",
+      "title": "Placeholder title"
+    }
+  ],
+```
+
+This tells the component factory to render an `imageRow` and a `horizontalContentCard` component and all of the
+properties that are needed to render those components.
+
+<Tip type="warning">
+  Each property in the API response needs to be a 1:1 match with the properties
+  that are expected by the component. If you pass in a property that is not
+  expected by the component, it will be ignored. The only exceptions are the
+  `_type` and `_key` properties which are set by the component factory.
+</Tip>
+
+## Adding new component types
+
+To add a new component type, you will need to do the following:
+
+- Create an entry in the component factory index file switch statement.
+- Add the corresponding types for the new component.
+- create a new story entry in the `components/factories/component-factory` storybook file.
+
+You will also need to pay close attention to the properties coming from the API (or whatever method you use to render the child component)
+
+For example, if you are rendering a `ContentCard` component, you will need to pass in the following properties:
+
+- title
+- content
+- linkText
+- linkUrl
+- ctaType
+- featured
+- orientation
+- bgTakeover
+- swapSides
+- image
+
+If you pass in any other properties, they will be ignored unless you manually specify them in the component factory switch statement.

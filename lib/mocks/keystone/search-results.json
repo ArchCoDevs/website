@@ -1,0 +1,201 @@
+{
+  "search_string": "16 Matches Found for brixton",
+  "latitude": 51.5113,
+  "longitude": -0.1033,
+  "distance": 10,
+  "current_page": 1,
+  "total_pages": 24,
+  "per_page": 10,
+  "rental_space_model_list": [
+    {
+      "favourite": false,
+      "tag": "new",
+      "address": "1 COVENT GARDEN, LONDON",
+      "use": "Office",
+      "size_sq_ft": 750,
+      "size_sq_mt": 69.68,
+      "price_title": "£1200 per month",
+      "price": 1200,
+      "latitude": 51.5114,
+      "longitude": -0.1199,
+      "reference": "CGD12345",
+      "thumbnail": {
+        "url": "/mocks/images/property-1.jpg",
+        "alt_text": "Covent Garden Office"
+      },
+      "postcode": "WC2E 9ED",
+      "rental_space_id": 101
+    },
+    {
+      "favourite": true,
+      "tag": "",
+      "address": "10 DOWNING STREET, LONDON",
+      "use": "Office",
+      "size_sq_ft": 1500,
+      "size_sq_mt": 139.35,
+      "price_title": "£2500 per month",
+      "price": 2500,
+      "latitude": 51.5034,
+      "longitude": -0.1276,
+      "reference": "DNS12346",
+      "thumbnail": {
+        "url": "/mocks/images/property-2.jpg",
+        "alt_text": "Downing Street Office"
+      },
+      "postcode": "SW1A 2AA",
+      "rental_space_id": 102
+    },
+    {
+      "favourite": false,
+      "tag": "",
+      "address": "1 LONDON BRIDGE, LONDON",
+      "use": "Retail",
+      "size_sq_ft": 500,
+      "size_sq_mt": 46.45,
+      "price_title": "£1000 per month",
+      "price": 1000,
+      "latitude": 51.5079,
+      "longitude": -0.0877,
+      "reference": "LBR12347",
+      "thumbnail": {
+        "url": "/mocks/images/property-3.jpg",
+        "alt_text": "London Bridge Retail Space"
+      },
+      "postcode": "SE1 9BG",
+      "rental_space_id": 103
+    },
+    {
+      "favourite": false,
+      "tag": "new",
+      "address": "1 BANK STATION, LONDON",
+      "use": "Office",
+      "size_sq_ft": 1300,
+      "size_sq_mt": 120.77,
+      "price_title": "£2300 per month",
+      "price": 2300,
+      "latitude": 51.5145,
+      "longitude": -0.087,
+      "reference": "BST12348",
+      "thumbnail": {
+        "url": "/mocks/images/property-4.jpg",
+        "alt_text": "Bank Station Office"
+      },
+      "postcode": "EC3V 3LA",
+      "rental_space_id": 104
+    },
+    {
+      "favourite": true,
+      "tag": "",
+      "address": "20 FENCHURCH STREET, LONDON",
+      "use": "Retail",
+      "size_sq_ft": 650,
+      "size_sq_mt": 60.39,
+      "price_title": "£1800 per month",
+      "price": 1800,
+      "latitude": 51.5125,
+      "longitude": -0.0803,
+      "reference": "FCH12349",
+      "thumbnail": {
+        "url": "/mocks/images/property-5.jpg",
+        "alt_text": "Fenchurch Street Retail Space"
+      },
+      "postcode": "EC3M 3BY",
+      "rental_space_id": 105
+    },
+    {
+      "favourite": false,
+      "tag": "new",
+      "address": "1 PICCADILLY CIRCUS, LONDON",
+      "use": "Office",
+      "size_sq_ft": 800,
+      "size_sq_mt": 74.32,
+      "price_title": "£2000 per month",
+      "price": 2000,
+      "latitude": 51.5098,
+      "longitude": -0.1357,
+      "reference": "PCC12350",
+      "thumbnail": {
+        "url": "/mocks/images/property-6.jpg",
+        "alt_text": "Piccadilly Circus Office"
+      },
+      "postcode": "W1J 9HS",
+      "rental_space_id": 106
+    },
+    {
+      "favourite": false,
+      "tag": "",
+      "address": "1 OXFORD STREET, LONDON",
+      "use": "Retail",
+      "size_sq_ft": 550,
+      "size_sq_mt": 51.1,
+      "price_title": "£1100 per month",
+      "price": 1100,
+      "latitude": 51.5154,
+      "longitude": -0.1426,
+      "reference": "OXS12351",
+      "thumbnail": {
+        "url": "/mocks/images/property-1.jpg",
+        "alt_text": "Oxford Street Retail Space"
+      },
+      "postcode": "W1D 2LT",
+      "rental_space_id": 107
+    },
+    {
+      "favourite": true,
+      "tag": "",
+      "address": "1 TOTTENHAM COURT ROAD, LONDON",
+      "use": "Office",
+      "size_sq_ft": 950,
+      "size_sq_mt": 88.26,
+      "price_title": "£1900 per month",
+      "price": 1900,
+      "latitude": 51.5165,
+      "longitude": -0.1308,
+      "reference": "TCR12352",
+      "thumbnail": {
+        "url": "/mocks/images/property-2.jpg",
+        "alt_text": "Tottenham Court Road Office"
+      },
+      "postcode": "W1T 7QD",
+      "rental_space_id": 108
+    },
+    {
+      "favourite": false,
+      "tag": "new",
+      "address": "1 CHARING CROSS ROAD, LONDON",
+      "use": "Retail",
+      "size_sq_ft": 400,
+      "size_sq_mt": 37.16,
+      "price_title": "£900 per month",
+      "price": 900,
+      "latitude": 51.5071,
+      "longitude": -0.1281,
+      "reference": "CCR12353",
+      "thumbnail": {
+        "url": "/mocks/images/property-3.jpg",
+        "alt_text": "Charing Cross Road Retail Space"
+      },
+      "postcode": "WC2H 0AP",
+      "rental_space_id": 109
+    },
+    {
+      "favourite": true,
+      "tag": "",
+      "address": "1 LEICESTER SQUARE, LONDON",
+      "use": "Office",
+      "size_sq_ft": 1000,
+      "size_sq_mt": 92.9,
+      "price_title": "£2200 per month",
+      "price": 2200,
+      "latitude": 51.509,
+      "longitude": -0.1286,
+      "reference": "LSQ12354",
+      "thumbnail": {
+        "url": "/mocks/images/property-4.jpg",
+        "alt_text": "Leicester Square Office"
+      },
+      "postcode": "WC2H 7DE",
+      "rental_space_id": 110
+    }
+  ]
+}

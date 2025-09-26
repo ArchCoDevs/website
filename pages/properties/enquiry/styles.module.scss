@@ -1,0 +1,108 @@
+.form fieldset {
+  column-gap: spacing(1);
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: margin(2);
+  padding: 0;
+  row-gap: spacing(1.5);
+
+  @include util.mq(bp.$medium-small) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form > div {
+  justify-content: center;
+  margin-left: 0;
+}
+
+.heading {
+  @include type.heading-medium();
+
+  font-weight: bold;
+  margin-bottom: margin(1);
+}
+
+.span-columns {
+  grid-column: 1/-1;
+}
+
+.submit {
+  margin-top: margin(2);
+  padding: padding(1) padding(5);
+}
+
+.success-message {
+  background-color: col.$success;
+  border-radius: radius(1);
+  color: col.$light;
+  margin-top: margin(2);
+  padding: padding(1);
+}
+
+.error-message {
+  background-color: col.$error;
+  color: col.$light;
+  margin-top: margin(2);
+  padding: padding(1);
+}
+
+.enquiry-list {
+  display: grid;
+  gap: spacing(1);
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  margin-top: margin(2);
+
+  li {
+    align-items: center;
+    border: 1px solid col.$grey-400;
+    border-radius: $border-radius;
+    display: flex;
+    gap: spacing(1);
+    justify-content: space-between;
+    padding: padding(0.5) padding(1);
+
+    a {
+      @include util.link();
+    }
+  }
+}
+
+.no-properties {
+  margin-top: margin(2);
+
+  a {
+    @include util.link();
+  }
+}
+
+.btn-remove {
+  min-width: auto;
+
+  &:hover {
+    @include animate.wobble();
+  }
+}
+
+.speak-to-agent {
+  align-items: center;
+  display: inline-flex;
+  font-weight: bold;
+  gap: spacing(0.5);
+  margin-top: margin(2);
+
+  a {
+    color: col.$primary;
+    display: inline-flex;
+    gap: spacing(0.5);
+  }
+
+  svg {
+    height: 15px;
+    width: 15px;
+  }
+
+  &:hover svg {
+    @include animate.wobble();
+  }
+}

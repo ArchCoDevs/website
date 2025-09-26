@@ -1,0 +1,46 @@
+.hero-image {
+  border-radius: $border-radius;
+  height: auto;
+  min-height: 350px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.small-h2 {
+  @include type.heading-small();
+
+  margin-bottom: margin(2);
+}
+
+.large-h2 {
+  @include type.heading-large();
+
+  margin-bottom: margin(2);
+  text-align: center;
+
+  em {
+    font-style: italic;
+  }
+}
+
+.aside {
+  height: fit-content;
+}
+
+.columns-grid {
+  column-gap: 0;
+  grid-template-columns: auto;
+
+  @include util.mq(bp.$medium-small) {
+    grid-template-columns: auto !important;
+  }
+
+  @include util.mq(bp.$medium) {
+    grid-template-columns: 2fr 1fr !important;
+  }
+}

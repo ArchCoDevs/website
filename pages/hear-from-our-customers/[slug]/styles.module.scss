@@ -1,0 +1,27 @@
+.small-h2 {
+  @include type.heading-small();
+
+  margin-bottom: margin(2);
+}
+
+.large-h2 {
+  @include type.heading-large();
+
+  margin-bottom: margin(2);
+  text-align: center;
+
+  em {
+    font-style: italic;
+  }
+}
+
+.date {
+  color: col.$grey-700;
+  margin-top: -(margin(1));
+}
+
+.map {
+  border-radius: $border-radius-md;
+  overflow: hidden;
+  padding-bottom: padding(1);
+}

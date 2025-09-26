@@ -1,0 +1,49 @@
+.auth {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: spacing(1);
+  justify-content: center;
+  place-self: center;
+
+  form {
+    max-width: 600px;
+    width: 100%;
+  }
+}
+
+.input-container {
+  display: grid;
+  gap: spacing(1);
+  grid-template-columns: 1fr;
+
+  @include util.mq(bp.$medium-small) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.password-note {
+  color: col.$grey-700;
+  line-height: 1.2;
+  padding: 0 padding(0.5);
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: spacing(2);
+  width: 100%;
+}
+
+.form-actions {
+  align-items: center;
+  display: flex;
+  gap: spacing(2);
+  justify-content: space-between;
+}
+
+.register-btn {
+  @include util.button-secondary;
+
+  padding: padding(0.8) padding(4);
+}

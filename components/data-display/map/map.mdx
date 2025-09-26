@@ -1,0 +1,22 @@
+import * as Stories from './map.stories';
+
+<Meta of={Stories} />
+
+<Title />
+
+<Description />
+
+<Tip type="warning">
+  Any page that uses the map component must be wrapped in the `APIProvider` component from `@vis.gl/react-google-maps` and have a valid Google Maps API key.
+  e.g. `<APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ''}>`
+</Tip>
+
+<Primary />
+
+## Static Map
+
+The static map component is used to display a map with a fixed set of markers. The map is not interactive and the markers are not clickable.
+
+<Canvas withToolbar sourceState="shown" of={Stories.Static} />
+
+<Controls />

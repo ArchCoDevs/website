@@ -1,0 +1,14 @@
+.video-embed {
+  align-items: center;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 padding(2);
+  text-align: center;
+  width: 70%;
+
+  iframe {
+    aspect-ratio: 16/9;
+    height: 100%;
+    width: 100%;
+  }
+}

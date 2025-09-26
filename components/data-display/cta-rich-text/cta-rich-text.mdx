@@ -1,0 +1,31 @@
+import * as Stories from './cta-rich-text.stories';
+
+<Meta of={Stories} />
+
+<Title />
+
+<Description />
+
+<Tip type="warning">
+  The RichText component supports all the HTML tags, but it is recommended to
+  use only the components provided by the library where possible. E.g. the
+  `table` element is styled correcty as you can see below but it would be better
+  to use the <a href="/docs/components-data-display-table--docs">Table</a>{' '}
+  component instead. To discourage the use of the HTML tags some of them are
+  unstyled.
+</Tip>
+
+<Primary />
+
+<Tip type="warning">
+  Only on H1 tag is allowed per page, so if you try to add a H1 tag to the
+  RichText component you will get a very clear error message.
+</Tip>
+
+<Canvas withToolbar sourceState="shown" of={Stories.WithH1Tag} />
+
+<Tip>
+  If you are using the RichText component to display content from the Sanity
+  CMS, you do not need to pass children, just pass the content from Sanity as a
+  `richText` prop.
+</Tip>

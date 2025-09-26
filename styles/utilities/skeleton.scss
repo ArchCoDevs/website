@@ -1,0 +1,34 @@
+@use '../colours' as col;
+
+@mixin skeleton($duration: 1.2s, $loop: infinite) {
+  @keyframes pulse {
+    0% {
+      background-color: col.$grey-200;
+    }
+
+    50% {
+      background-color: col.$grey-300;
+    }
+
+    100% {
+      background-color: col.$grey-200;
+    }
+  }
+
+  background-color: transparent !important;
+  border-color: transparent !important;
+  position: relative !important;
+
+  &::after {
+    animation: pulse $duration $loop;
+    background-color: col.$grey-200;
+    border-radius: 0.25rem;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+}

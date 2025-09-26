@@ -1,0 +1,78 @@
+.property-enquiry-form {
+  background-color: col.$light;
+  border: 1px solid col.$grey-500;
+  border-radius: $border-radius-md;
+  padding: padding(3);
+}
+
+.form fieldset {
+  column-gap: spacing(1);
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: margin(2);
+  padding: 0;
+  row-gap: spacing(1.5);
+
+  @include util.mq(bp.$medium-small) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form > div {
+  margin-left: 0;
+}
+
+.heading {
+  @include type.heading-small();
+
+  margin-bottom: margin(1);
+}
+
+.cta {
+  align-items: center;
+  display: flex;
+  gap: spacing(1);
+
+  a {
+    align-items: center;
+    color: col.$primary-darker;
+    display: inline-flex;
+    font-weight: bold;
+    gap: spacing(0.5);
+
+    &:hover {
+      svg {
+        @include animate.wobble();
+      }
+    }
+  }
+
+  svg {
+    fill: col.$primary-darker;
+    height: 15px;
+    width: 15px;
+  }
+}
+
+.submit {
+  margin-top: margin(2);
+  width: 100%;
+
+  @include util.mq(bp.$medium-small) {
+    width: 50%;
+  }
+}
+
+.error-message {
+  background-color: col.$error;
+  color: col.$light;
+  margin-top: margin(2);
+  padding: padding(1);
+}
+
+.success-message {
+  background-color: col.$success;
+  color: col.$light;
+  margin-top: margin(2);
+  padding: padding(1);
+}

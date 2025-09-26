@@ -1,0 +1,27 @@
+.auth {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: spacing(1);
+  justify-content: center;
+  place-self: center;
+
+  form {
+    max-width: 450px;
+    width: 100%;
+  }
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: spacing(2);
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  gap: spacing(2);
+  margin-top: margin(1);
+}

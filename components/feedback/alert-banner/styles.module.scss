@@ -1,0 +1,96 @@
+@mixin banner() {
+  align-items: center;
+  background-color: col.$light;
+  border: 1px solid col.$border;
+  border-radius: $border-radius;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  margin-bottom: $component-spacing;
+  place-content: center;
+
+  .icon {
+    align-items: center;
+    background-color: col.$secondary;
+    color: col.$light;
+    display: flex;
+    justify-content: center;
+    padding: padding(2);
+  }
+
+  .message {
+    padding: padding(1) padding(2);
+
+    h2 {
+      @include type.heading-medium();
+
+      color: col.$body-text;
+      margin-bottom: margin(0.5);
+    }
+  }
+
+  a {
+    @include util.link();
+
+    text-decoration: underline;
+  }
+}
+
+.alert-banner-success {
+  @include banner();
+
+  background-color: rgba(col.$success, 60%);
+  border-color: darken(col.$success, 10%);
+
+  .icon {
+    background-color: col.$success;
+  }
+
+  .message h2 {
+    color: darken(col.$success, 10%);
+  }
+}
+
+.alert-banner-warning {
+  @include banner();
+
+  background-color: rgba(col.$warning, 60%);
+  border-color: darken(col.$warning, 10%);
+
+  .icon {
+    background-color: col.$warning;
+  }
+
+  .message h2 {
+    color: darken(col.$warning, 10%);
+  }
+}
+
+.alert-banner-error {
+  @include banner();
+
+  background-color: rgba(col.$error, 50%);
+  border-color: darken(col.$error, 10%);
+
+  .icon {
+    background-color: col.$error;
+  }
+
+  .message h2 {
+    color: darken(col.$error, 10%);
+  }
+}
+
+.alert-banner-information {
+  @include banner();
+
+  background-color: rgba(col.$info, 50%);
+  border-color: darken(col.$info, 10%);
+
+  .icon {
+    background-color: col.$info;
+  }
+
+  .message h2 {
+    color: darken(col.$info, 10%);
+  }
+}

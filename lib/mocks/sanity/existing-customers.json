@@ -1,0 +1,333 @@
+[
+  {
+    "parentLocation": {
+      "_ref": "ba414514-027e-4d84-9ae0-7bf40b1fccfc",
+      "_type": "reference"
+    },
+    "_createdAt": "2024-07-30T10:56:19Z",
+    "title": "Supported FSB membership for customers",
+    "content": [
+      {
+        "_key": "0f94d2019795",
+        "richText": [
+          {
+            "_type": "block",
+            "style": "normal",
+            "_key": "75572247e9c8",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "marks": [],
+                "text": "We are proud to provide spaces to approximately 3,800 diverse and independent businesses, which make a unique and vital contribution to local communities and the UK economy.",
+                "_key": "3fd0fca653fa"
+              }
+            ]
+          },
+          {
+            "_type": "block",
+            "style": "normal",
+            "_key": "f085bbb690e5",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "marks": [],
+                "text": "This includes a discount provided by FSB and a £100 per business contribution from us. Eligible customers who have under five employees pay just £96 for their first year of membership, less than half the normal starting price.",
+                "_key": "42aa167db194"
+              }
+            ]
+          }
+        ],
+        "image": {
+          "alt_text": "Sama Bankside Internal 2  | Southwark",
+          "id": "886xkjr9wqzmnk5g8k8zvr",
+          "url": "https://cdn.bfldr.com/IJXUD54I/as/h5w64v689wtn6kb4kjv4t6q/Sama_Bankside_Internal_2___Southwark?auto=webp&format=png"
+        },
+        "_type": "twoColumnRichTextAndImage"
+      },
+      {
+        "title": "Key benefits",
+        "items": [
+          "The resources provided by FSB can help our customers to comply with relevant statutory obligations and supports their businesses to succeed.",
+          "The resources provided by FSB helps our customers to grow and succeed. FSB membership unlocks market-leading business services and tools designed to help small businesses to thrive, including financial expertise and support chasing late payments.",
+          "FSB members benefit from legal and tax insurance protection, 24/7 legal support, financial expertise and exclusive discounts. FSB members can access advice on health & safety, insurance, tax, employment protection and debt recovery."
+        ],
+        "showBackground": true,
+        "_type": "twoColumnList",
+        "_key": "24d9d1f7cbb9"
+      },
+      {
+        "image": {
+          "alt_text": "Union Street | Southwark",
+          "id": "6p94fkhrtm88656j36kg5px",
+          "url": "https://cdn.bfldr.com/IJXUD54I/as/2z78p974276j6bkngf5m8w86/Union_Street__Southwark?auto=webp&format=png"
+        },
+        "_type": "twoColumnRichTextAndImage",
+        "_key": "b08ad80752a4",
+        "richText": [
+          {
+            "_type": "block",
+            "style": "h3",
+            "_key": "5c7942b20ab2",
+            "markDefs": [],
+            "children": [
+              {
+                "marks": [],
+                "text": "Eligibility and how to access the offer",
+                "_key": "5b191b9885830",
+                "_type": "span"
+              }
+            ]
+          },
+          {
+            "_key": "9aab436cd22a",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "marks": [],
+                "text": "The offer is available on a first come first served basis for up to 100 of our customers who are not already members of FSB or have not been FSB members in the previous two years. Our customers can visit the FSB website to find out more about the cost and membership benefits.",
+                "_key": "d80c25dc0fdd0"
+              }
+            ],
+            "_type": "block",
+            "style": "normal"
+          },
+          {
+            "style": "normal",
+            "_key": "a0a2aa84280d",
+            "markDefs": [],
+            "children": [
+              {
+                "text": "To claim the discount, our customers will need to input the redemption code ",
+                "_key": "b7212fd011200",
+                "_type": "span",
+                "marks": []
+              },
+              {
+                "_type": "span",
+                "marks": ["em", "strong"],
+                "text": "ARCH100",
+                "_key": "b732f385a988"
+              },
+              {
+                "_type": "span",
+                "marks": [],
+                "text": " during registration for membership. Member registration can be accessed directly by scanning the bar code below or visiting the FSB registration payment page.",
+                "_key": "04b1bb34d84d"
+              }
+            ],
+            "_type": "block"
+          },
+          {
+            "_type": "block",
+            "style": "normal",
+            "_key": "2a52b8d545a6",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "marks": [],
+                "text": "For validation purposes once customer registration has been completed our customers will be required to provide FSB with their tenant reference number, which can be found on the top of any customer invoice from us. FSB will contact our customers directly via email within seven days to request this information.",
+                "_key": "66f31f739b2f0"
+              }
+            ]
+          },
+          {
+            "style": "h4",
+            "_key": "88a73af8a5e9",
+            "markDefs": [],
+            "children": [
+              {
+                "text": "Privacy statement",
+                "_key": "d2975cc522d10",
+                "_type": "span",
+                "marks": []
+              }
+            ],
+            "_type": "block"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "marks": [],
+                "text": "For the purposes of this offer, The Arch Company and FSB will share customer details including tenant reference number name and contact details to confirm eligibility. For more information on how The Arch Company process personal data please view our Privacy Policy. For more information on how FSB process personal data please view their Privacy Policy.",
+                "_key": "04b535e9ea950"
+              }
+            ],
+            "_type": "block",
+            "style": "normal",
+            "_key": "2f7554fe5748"
+          }
+        ]
+      }
+    ],
+    "_originalId": "5d016af5-8db0-4417-ae23-798262830d5d",
+    "_rev": "0aofwwU9evr3LWPvKlgUh2",
+    "_type": "generalInformation",
+    "_id": "5d016af5-8db0-4417-ae23-798262830d5d",
+    "_updatedAt": "2024-07-30T12:40:50Z",
+    "slug": {
+      "current": "fsb-membership",
+      "_type": "slug"
+    }
+  },
+  {
+    "parentLocation": {
+      "_ref": "ba414514-027e-4d84-9ae0-7bf40b1fccfc",
+      "_type": "reference"
+    },
+    "_createdAt": "2024-07-30T13:54:24Z",
+    "heroImage": {
+      "alt_text": "Sama Bankside Internal 2  | Southwark",
+      "id": "886xkjr9wqzmnk5g8k8zvr",
+      "url": "https://cdn.bfldr.com/IJXUD54I/as/h5w64v689wtn6kb4kjv4t6q/Sama_Bankside_Internal_2___Southwark?auto=webp&format=png"
+    },
+    "_id": "62a273c8-7c1d-4add-812b-24ff84ca18be",
+    "title": "Arcade Coffee & Co, Herne Hill",
+    "_updatedAt": "2024-07-30T14:40:16Z",
+    "sideContent": [
+      {
+        "_type": "contentCard",
+        "linkUrl": "https://www.bbc.co.uk",
+        "linkText": "Search",
+        "_key": "a565bae0ab9b",
+        "isFeatured": false,
+        "title": "Want your business to thrive in one of our spaces?",
+        "content": "Browse available properties near you.",
+        "ctaType": "button"
+      }
+    ],
+    "metadata": {
+      "_type": "metadata",
+      "description": "Keeping it local is at the heart of the railway arch coffee business founded by Shan Miah",
+      "title": "Arcade Coffee & Co, Herne Hill"
+    },
+    "_rev": "0aofwwU9evr3LWPvKloxLL",
+    "_type": "twoColumnEditorial",
+    "content": [
+      {
+        "_key": "c12e43db8a9416505ba52f56c8673a9c",
+        "richText": [
+          {
+            "children": [
+              {
+                "_type": "span",
+                "marks": [],
+                "text": "Keeping it local is at the heart of the railway arch coffee business founded by Shan Miah",
+                "_key": "64dcd24c237b0"
+              }
+            ],
+            "_type": "block",
+            "style": "h2",
+            "_key": "b86e53c4344c",
+            "markDefs": []
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "Having grown up in Southwark Hill, Arcade Coffee & Co founder Shan Miah always wanted to open a business in his local area. Arcade Coffee & Co was born out of a passion project, honed from walking past the arch space almost every day for years. After working in the City as an IT Auditor for eight years, Shan really wanted to pursue something he felt enthusiastic about – which was creating good quality coffee.",
+                "_key": "3ea7677b5bce0",
+                "_type": "span",
+                "marks": []
+              }
+            ],
+            "_type": "block",
+            "style": "normal",
+            "_key": "1406097a49c1"
+          },
+          {
+            "_key": "7395778bc708",
+            "markDefs": [],
+            "children": [
+              {
+                "_key": "e13363ffc8470",
+                "_type": "span",
+                "marks": [],
+                "text": "“I was actually a customer at the kiosk that existed in the arch before I took it over and saw the incredible potential the space had, that wasn’t being tapped into. After growing another local business down the road, I was ready to create something within this unique space, and I’m so glad I did”"
+              }
+            ],
+            "_type": "block",
+            "style": "blockquote"
+          }
+        ],
+        "_type": "richText"
+      },
+      {
+        "image": {
+          "alt_text": "Sama Bankside Internal | Southwark",
+          "id": "bthmrpgj5rkm99vnsbbqw89",
+          "url": "https://cdn.bfldr.com/IJXUD54I/as/hqc4g9srtb4p2x2w37hqg5x/Sama_Bankside_Internal__Southwark?auto=webp&format=png"
+        },
+        "_type": "fullWidthImage",
+        "_key": "bfc3ee352edd"
+      },
+      {
+        "richText": [
+          {
+            "_type": "block",
+            "style": "h2",
+            "_key": "b86e53c4344c",
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "marks": [],
+                "text": "Keeping it local is at the heart of the railway arch coffee business founded by Shan Miah",
+                "_key": "64dcd24c237b0"
+              }
+            ]
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "text": "Having grown up in Southwark Hill, Arcade Coffee & Co founder Shan Miah always wanted to open a business in his local area. Arcade Coffee & Co was born out of a passion project, honed from walking past the arch space almost every day for years. After working in the City as an IT Auditor for eight years, Shan really wanted to pursue something he felt enthusiastic about – which was creating good quality coffee.",
+                "_key": "3ea7677b5bce0",
+                "_type": "span",
+                "marks": []
+              }
+            ],
+            "_type": "block",
+            "style": "normal",
+            "_key": "1406097a49c1"
+          },
+          {
+            "markDefs": [],
+            "children": [
+              {
+                "_type": "span",
+                "marks": [],
+                "text": "“I was actually a customer at the kiosk that existed in the arch before I took it over and saw the incredible potential the space had, that wasn’t being tapped into. After growing another local business down the road, I was ready to create something within this unique space, and I’m so glad I did”",
+                "_key": "e13363ffc8470"
+              }
+            ],
+            "_type": "block",
+            "style": "blockquote",
+            "_key": "7395778bc708"
+          }
+        ],
+        "_type": "richText",
+        "_key": "872ecae2fede"
+      },
+      {
+        "_key": "d7cb65f604a126d15dadb33edc915144",
+        "image": {
+          "alt_text": "Japanese Canteen | Tower Hamlets",
+          "id": "pckvcgnnrcjt4wnh394hsmz",
+          "url": "https://cdn.bfldr.com/IJXUD54I/as/b98mtnnqcsjhgww29c8c399/Japanese_Canteen__Tower_Hamlets?auto=webp&format=png"
+        },
+        "_type": "fullWidthImage"
+      }
+    ],
+    "slug": {
+      "current": "arcade-coffee-and-co-herne-hill",
+      "_type": "slug"
+    },
+    "_originalId": "62a273c8-7c1d-4add-812b-24ff84ca18be"
+  }
+]

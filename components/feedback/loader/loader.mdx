@@ -1,0 +1,72 @@
+import * as Stories from './loader.stories';
+
+<Meta of={Stories} />
+
+<Title />
+
+<Description />
+
+<Primary />
+
+<Controls />
+
+The loaders can be set to a few different colour variants. The default is `primary`. Take a look at the props panel above
+to look at the colour options.
+
+<Tip type="warning">
+  One of the options is 'white'. This is useful for putting a loader on an item
+  which is always dark. However if that item is light in dark-mode, then the
+  loader will still be white. Use this option with caution.
+</Tip>
+
+## Loader Types
+
+There are four different types of Loader depending on your use case:
+
+### Bar
+
+The `bar` type displays a bar the full-width of the container and displays a bar moving from left to right in an infinite loop.
+
+This should be used when a full page is loading and appears at the top above all other content.
+
+<Canvas withToolbar sourceState="shown" of={Stories.Bar} />
+
+### Spinner
+
+The `spinner` type displays aan arc in a spinner animation. This is the default type.
+
+This is used when a component is loading and appears in the center of the component.
+
+<Canvas withToolbar sourceState="shown" of={Stories.Spinner} />
+
+### Dots
+
+The `dots` type displays four resizing dots.
+
+This is used when a small component is loading. (e.g. a button).
+
+<Canvas withToolbar sourceState="shown" of={Stories.Dots} />
+
+### Percentage Bar
+
+The `percentage-bar` type displays a bar the full-width of the container and displays a bar expanding from left to right based on the value of the `progress` prop.
+
+This should be used when you are loading an item and you know how long it will take to load. (e.g. a file transfer).
+
+<Canvas withToolbar sourceState="shown" of={Stories.PercentageBar} />
+
+## Loader size
+
+You can set the size of the loader by passing a `size` prop. The default size is `80px`.
+
+<Tip type="note">
+  The 'bar' and 'percentage-bar' loaders are not affected by this prop.
+</Tip>
+
+<Canvas withToolbar sourceState="shown" of={Stories.SetWidth} />
+
+## Loader label
+
+You can set a label for the loader by passing a `label` prop.
+
+<Canvas withToolbar sourceState="shown" of={Stories.BarWithLabel} />

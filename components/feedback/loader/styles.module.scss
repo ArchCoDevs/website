@@ -1,0 +1,53 @@
+.loader {
+  text-align: center;
+  width: max-content;
+
+  &.is-bar,
+  &.is-percentage-bar {
+    width: 100%;
+  }
+}
+
+.label {
+  @include type.body-text();
+}
+
+.svg {
+  fill: col.$primary;
+
+  @include util.dark-mode() {
+    fill: col.$light;
+  }
+
+  .is-spinner & {
+    @include animate.spin();
+  }
+
+  .is-bar &,
+  .is-percentage-bar & {
+    background-color: rgba(col.$primary, 0.4);
+    height: 4px;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .is-secondary & {
+    fill: col.$secondary;
+  }
+
+  .is-tertiary & {
+    fill: col.$tertiary;
+  }
+
+  .is-white & {
+    fill: col.$light;
+  }
+
+  .is-black & {
+    fill: col.$dark;
+
+    @include util.dark-mode() {
+      fill: col.$light;
+    }
+  }
+}

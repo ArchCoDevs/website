@@ -1,0 +1,40 @@
+/**
+ Wobble animation
+ Usage:
+  @include animate.wobble(<options>);
+ Options:
+  - amount: amount of wobble (default: 8deg)
+  - duration: duration of the animation (default: .5s)
+  - loop: number of times to loop the animation (default: infinite)
+  - starting: the starting rotation angle (default: 0)
+*/
+@mixin wobble(
+  $starting: 0deg,
+  $amount: 8deg,
+  $duration: 0.5s,
+  $loop: infinite
+) {
+  @keyframes wobble {
+    0% {
+      transform: rotate($starting);
+    }
+
+    25% {
+      transform: rotate(calc(#{$starting} - #{$amount}));
+    }
+
+    50% {
+      transform: rotate(calc(#{$starting} + #{$amount}));
+    }
+
+    75% {
+      transform: rotate(calc(#{$starting} - #{$amount}));
+    }
+
+    100% {
+      transform: rotate($starting);
+    }
+  }
+
+  animation: wobble $duration $loop;
+}

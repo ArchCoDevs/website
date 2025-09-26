@@ -1,0 +1,51 @@
+[
+  {
+    "featuredLocations": [
+      {
+        "_type": "navigationItem",
+        "link": {
+          "_ref": "3ba70f03-7ec0-4bc0-8c64-a54d4c608d32",
+          "_type": "reference"
+        },
+        "label": "Brixton",
+        "_key": "4729c6c47026"
+      },
+      {
+        "_type": "navigationItem",
+        "link": {
+          "_ref": "aba59f44-5267-491e-bbdd-589f202aa431",
+          "_type": "reference"
+        },
+        "label": "Camden",
+        "_key": "697bfb27ca91"
+      }
+    ],
+    "_rev": "0aofwwU9evr3LWPvKmaRhV",
+    "_id": "navigation",
+    "existingCustomers": [
+      {
+        "_key": "9b2d5599b55e",
+        "_type": "navigationItem",
+        "link": {
+          "_ref": "5d016af5-8db0-4417-ae23-798262830d5d",
+          "_type": "reference"
+        },
+        "label": "FSB Membership"
+      },
+      {
+        "_key": "9d3c9b9d432e",
+        "_type": "navigationItem",
+        "link": {
+          "_ref": "62a273c8-7c1d-4add-812b-24ff84ca18be",
+          "_type": "reference"
+        },
+        "label": "Arcade coffee"
+      }
+    ],
+    "title": "Site navigation builder",
+    "_updatedAt": "2024-07-31T11:44:25Z",
+    "_originalId": "navigation",
+    "_createdAt": "2024-07-31T10:56:52Z",
+    "_type": "navigation"
+  }
+]

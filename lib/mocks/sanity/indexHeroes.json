@@ -1,0 +1,32 @@
+[
+  {
+    "_type": "indexHeroes",
+    "_id": "indexHeroes",
+    "_updatedAt": "2024-07-31T09:51:11Z",
+    "_originalId": "indexHeroes",
+    "indexHeroImages": {
+      "caseStudies": {
+        "alt_text": "Sama Bankside External",
+        "id": "332fcb2vtznq8p7q5fg37pwh",
+        "url": "https://cdn.bfldr.com/IJXUD54I/as/9rq6mwj9tjgbphs52s2p/Sama_Bankside_External?auto=webp&format=png"
+      },
+      "featuredLocations": {
+        "url": "https://cdn.bfldr.com/IJXUD54I/as/h5w64v689wtn6kb4kjv4t6q/Sama_Bankside_Internal_2___Southwark?auto=webp&format=png",
+        "alt_text": "Sama Bankside Internal 2  | Southwark",
+        "id": "886xkjr9wqzmnk5g8k8zvr"
+      },
+      "findYourSpace": {
+        "alt_text": "Row of Arches",
+        "id": "wxcqwn3mv3w5jffvx55g63xf",
+        "url": "https://cdn.bfldr.com/IJXUD54I/as/tr73f9f8kj5jspxqkqg88trq/Row_of_Arches?auto=webp&format=png"
+      },
+      "newsAndReports": {
+        "alt_text": "Japanese Canteen | Tower Hamlets",
+        "id": "pckvcgnnrcjt4wnh394hsmz",
+        "url": "https://cdn.bfldr.com/IJXUD54I/as/b98mtnnqcsjhgww29c8c399/Japanese_Canteen__Tower_Hamlets?auto=webp&format=png"
+      }
+    },
+    "_createdAt": "2024-07-31T09:51:11Z",
+    "_rev": "3aaVYl9ytaPbOXDl4AD05S"
+  }
+]

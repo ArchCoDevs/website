@@ -1,0 +1,165 @@
+@use 'spacing';
+
+$body-text-size: 1.6rem;
+
+@mixin body-text {
+  font-family: arial, sans-serif;
+  font-size: $body-text-size;
+  line-height: 1.4;
+}
+
+$small-text-size: 1.4rem;
+
+@mixin small-text {
+  font-family: arial, sans-serif;
+  font-size: $small-text-size;
+  line-height: 1;
+}
+
+$large-text-size: 1.8rem;
+
+@mixin large-text {
+  font-family: arial, sans-serif;
+  font-size: $large-text-size;
+  line-height: 1;
+}
+
+/* Headings */
+
+$heading-large-size: 2.8rem;
+
+@mixin heading-large {
+  font-family: 'Arial Black', sans-serif;
+  font-size: $heading-large-size;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+$heading-medium-size: 2.4rem;
+
+@mixin heading-medium {
+  font-family: arial, sans-serif;
+  font-size: $heading-medium-size;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  line-height: 1;
+}
+
+$heading-small-size: 2rem;
+
+@mixin heading-small {
+  font-family: arial, sans-serif;
+  font-size: $heading-small-size;
+  font-weight: 600;
+  line-height: 1;
+}
+
+/* Forms and buttons */
+$input-size: $body-text-size;
+
+@mixin input {
+  font-family: arial, sans-serif;
+  font-size: $input-size;
+  line-height: 1;
+}
+
+$input-label-size: $body-text-size;
+
+@mixin input-label {
+  font-family: arial, sans-serif;
+  font-size: $input-label-size;
+  font-weight: 600;
+  line-height: 1;
+}
+
+$input-placeholder-size: $input-size;
+
+@mixin input-placeholder {
+  font-family: arial, sans-serif;
+  font-size: $input-placeholder-size;
+  line-height: 1;
+}
+
+$form-metadata-size: 1.2rem;
+
+@mixin form-metadata {
+  font-family: arial, sans-serif;
+  font-size: $form-metadata-size;
+  line-height: 1;
+}
+
+$button-size: $input-size;
+
+@mixin button {
+  font-family: arial, sans-serif;
+  font-size: $button-size;
+  line-height: 1;
+}
+
+/* Links */
+$link-size: $body-text-size;
+
+@mixin link {
+  font-family: arial, sans-serif;
+  font-size: $link-size;
+  line-height: 1;
+}
+
+.body-text {
+  @include body-text;
+}
+
+.small-text {
+  @include small-text;
+}
+
+.large-text {
+  @include large-text;
+}
+
+/* Headings */
+.heading-large {
+  @include heading-large;
+
+  line-height: 1.2;
+}
+
+.heading-medium {
+  @include heading-medium;
+}
+
+.heading-small {
+  @include heading-small;
+}
+
+.heading-large--mb,
+.heading-medium--mb,
+.heading-small--mb {
+  margin-bottom: spacing.margin(2);
+}
+
+/* Forms and buttons */
+.input {
+  @include input;
+}
+
+.input-label {
+  @include input-label;
+}
+
+.input-placeholder {
+  @include input-placeholder;
+}
+
+.form-metadata {
+  @include form-metadata;
+}
+
+.button {
+  @include button;
+}
+
+.bold {
+  font-weight: bold;
+}

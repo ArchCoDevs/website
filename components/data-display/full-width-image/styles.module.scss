@@ -1,0 +1,17 @@
+.full-width-image {
+  border-radius: $border-radius;
+  height: auto;
+  margin-bottom: margin(4);
+  min-height: 350px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  .image {
+    object-fit: cover;
+  }
+
+  .full-height {
+    position: unset !important;
+  }
+}

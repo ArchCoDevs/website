@@ -1,0 +1,132 @@
+.toast-container {
+  align-items: center;
+  display: flex;
+  padding: padding(1.5);
+}
+
+.toast-close-button {
+  min-width: 0 !important;
+  padding: 0 !important;
+
+  svg {
+    fill: col.$light;
+    height: 15px;
+    width: 15px;
+  }
+}
+
+.toast {
+  align-self: flex-end;
+  border-radius: $border-radius-md;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  color: col.$light;
+  overflow: hidden;
+  pointer-events: auto;
+  position: fixed;
+  right: 50%;
+  top: spacing(5);
+  transform: translateX(50%);
+  width: 70%;
+  z-index: 99999;
+
+  &.success {
+    background: col.$success;
+
+    .progress-bar {
+      background-color: darken(col.$success, 10%);
+    }
+  }
+
+  &.error {
+    background: col.$danger;
+
+    .progress-bar {
+      background-color: darken(col.$danger, 10%);
+    }
+  }
+
+  &.info {
+    background: col.$info;
+
+    .progress-bar {
+      background-color: darken(col.$info, 10%);
+    }
+  }
+
+  &.warning {
+    background: col.$warning;
+
+    .progress-bar {
+      background-color: darken(col.$warning, 10%);
+    }
+  }
+
+  &.default {
+    background: col.$grey-800;
+
+    .toast-close-button {
+      svg {
+        fill: col.$light;
+      }
+    }
+  }
+}
+
+.toast-enter {
+  transform: translateY(0) translateX(50%) scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.toast-exit {
+  transform: translateY(-200%) translateX(50%) scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.toast-content {
+  color: col.$light;
+  flex: 1;
+  font-weight: 500;
+  margin-left: margin(1);
+}
+
+.toast-icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+.sr-only {
+  border-width: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.progress-bar {
+  animation: track-progress linear 1 forwards;
+  background-color: col.$grey-600;
+  bottom: 0;
+  height: 4px;
+  left: 0;
+  position: absolute;
+  transform-origin: left;
+  width: 100%;
+}
+
+@keyframes track-progress {
+  0% {
+    transform: scaleX(1);
+  }
+
+  100% {
+    transform: scaleX(0);
+  }
+}

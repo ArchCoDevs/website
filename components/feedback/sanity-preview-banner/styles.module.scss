@@ -1,0 +1,35 @@
+.sanity-preview {
+  align-items: center;
+  background-image:
+    repeating-linear-gradient(
+      -33deg,
+      darken(col.$danger, 20),
+      darken(col.$danger, 20) 20px,
+      darken(col.$danger, 25) 20px,
+      darken(col.$danger, 25) 40px
+    );
+  color: col.$light;
+  display: flex;
+  font-size: type.$body-text-size;
+  font-weight: bold;
+  justify-content: space-between;
+  padding: padding(1) padding(2);
+  position: relative;
+  text-align: center;
+
+  span {
+    align-items: center;
+    display: inline-flex;
+    gap: spacing(1);
+  }
+
+  a {
+    color: col.$light;
+    text-decoration: underline;
+  }
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+}

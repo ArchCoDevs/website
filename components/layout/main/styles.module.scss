@@ -1,0 +1,12 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: spacing(4);
+  margin: 0 auto;
+  margin-bottom: margin(4);
+  width: 100%;
+
+  & > div:last-child > :global(.needs-bottom-margin) {
+    margin-bottom: spacing(2);
+  }
+}

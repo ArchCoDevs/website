@@ -1,0 +1,67 @@
+.call-button {
+  @include util.button-secondary;
+
+  background-color: transparent;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @include util.mq(bp.$medium-small) {
+    flex-direction: row;
+  }
+
+  @include util.mq(bp.$medium-large) {
+    background-color: col.$light;
+    pointer-events: none;
+  }
+
+  strong {
+    color: col.$primary-darker;
+    margin-left: spacing(0.5);
+  }
+
+  &:hover {
+    .icon {
+      @include animate.wobble();
+    }
+  }
+}
+
+.text {
+  display: block;
+  margin-bottom: margin(0.5);
+
+  @include util.mq(bp.$medium-small) {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+}
+
+.number {
+  align-items: center;
+  display: flex;
+}
+
+.icon {
+  color: col.$primary-darker;
+  height: 1.5rem;
+  width: 1.5rem;
+
+  @include util.mq(bp.$medium-small) {
+    margin-left: spacing(1);
+  }
+}
+
+.small {
+  line-height: inherit;
+  padding: padding(0.5) padding(1);
+
+  .icon {
+    margin-left: 0;
+  }
+
+  .text {
+    display: none;
+  }
+}

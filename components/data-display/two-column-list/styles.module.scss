@@ -1,0 +1,40 @@
+.list-container {
+  padding: padding(2) padding(3);
+
+  &.with-bg {
+    background-color: col.$grey-200;
+  }
+}
+
+.title {
+  @include type.body-text();
+
+  font-weight: bold;
+  margin-bottom: margin(2);
+}
+
+.list {
+  display: grid;
+  grid-row-gap: spacing(2);
+  list-style-type: none;
+
+  @include util.mq(bp.$medium-small) {
+    grid-gap: unset spacing(3);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &.type-ordered {
+    list-style-type: decimal;
+    margin-left: margin(1.5);
+  }
+
+  &.type-unordered {
+    line-height: 1.2;
+    list-style-type: disc;
+    margin-left: margin(1.5);
+
+    li::marker {
+      color: col.$primary;
+    }
+  }
+}

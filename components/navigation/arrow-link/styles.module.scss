@@ -1,0 +1,41 @@
+.arrow-link {
+  @include util.focus-visible();
+
+  align-items: center;
+  color: col.$body-text;
+  display: flex;
+  flex-direction: row;
+  gap: spacing(1);
+  line-height: 1.2;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: col.$primary;
+    text-underline-offset: 5px;
+
+    .icon {
+      @include animate.wobble(90deg);
+    }
+  }
+}
+
+.icon {
+  fill: col.$primary;
+  height: 15px;
+  transform: rotate(90deg);
+  width: 15px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+
+  &:hover {
+    .icon {
+      @include animate.wobble(-90deg);
+    }
+  }
+
+  .icon {
+    transform: rotate(-90deg);
+  }
+}

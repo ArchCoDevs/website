@@ -1,0 +1,63 @@
+[
+  {
+    "_type": "globals",
+    "_id": "globals",
+    "_updatedAt": "2024-07-31T09:49:41Z",
+    "_originalId": "globals",
+    "socialMedia": [
+      {
+        "_key": "6831a398df1f",
+        "_type": "socialMediaAccount",
+        "href": "https://www.fb.me/",
+        "label": "Facebook"
+      },
+      {
+        "_key": "5857eed45170",
+        "_type": "socialMediaAccount",
+        "href": "https://linkedin.com/",
+        "label": "LinkedIn"
+      },
+      {
+        "href": "https://x.com/",
+        "label": "Twitter",
+        "_key": "c7b5cb13758e",
+        "_type": "socialMediaAccount"
+      },
+      {
+        "_key": "2d0f665254f0",
+        "_type": "socialMediaAccount",
+        "href": "https://www.instagram.com/",
+        "label": "Instagram"
+      }
+    ],
+    "_createdAt": "2024-07-31T09:47:03Z",
+    "footerLinks": [
+      {
+        "label": "Terms and conditions",
+        "_key": "8ff396eafe27",
+        "_type": "footerLink",
+        "href": "/terms-and-conditions"
+      },
+      {
+        "_type": "footerLink",
+        "href": "/privacy-policy",
+        "label": "Privacy policy",
+        "_key": "73db05ead3a2"
+      },
+      {
+        "label": "Modern slavery statement",
+        "_key": "c687075ceca3",
+        "_type": "footerLink",
+        "href": "/modern-slavery-statement"
+      },
+      {
+        "_type": "footerLink",
+        "href": "/cookie-policy",
+        "label": "Cookie policy",
+        "_key": "4025d8287525"
+      }
+    ],
+    "_rev": "0aofwwU9evr3LWPvKmWVZu",
+    "siteName": "The Arch Co"
+  }
+]

@@ -1,0 +1,73 @@
+.input-select-container {
+  @include util.base-input();
+
+  padding: 0;
+  padding-right: 2rem;
+  position: relative;
+
+  .icon {
+    fill: col.$primary;
+    height: 15px;
+    pointer-events: none;
+    position: absolute;
+    right: spacing(0.8);
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    width: 15px;
+    z-index: 2;
+  }
+
+  &.custom-icon {
+    .icon {
+      height: 18px;
+      transform: translateY(-50%) rotate(0);
+      width: 18px;
+    }
+  }
+
+  &.status-error {
+    &::after {
+      background-color: col.$error;
+    }
+  }
+}
+
+.input-select {
+  @include type.input();
+  @include util.focus-visible();
+  @include util.statuses('focus');
+  @include util.statuses('border');
+  @include util.statuses('background-faded');
+
+  appearance: none;
+  background-color: transparent;
+  border-color: transparent;
+  color: col.$body-text;
+  cursor: pointer;
+  height: 100%;
+  line-height: 1.5;
+  outline: none;
+  padding: padding(0.5) padding(1);
+  padding-right: 2rem;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+.multi-select-container select {
+  @include util.base-input();
+
+  min-height: 10rem;
+
+  option {
+    padding: padding(0.5) padding(1);
+  }
+
+  &::after {
+    display: none;
+  }
+}

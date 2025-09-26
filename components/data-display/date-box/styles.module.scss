@@ -1,0 +1,33 @@
+.date-box {
+  align-items: center;
+  backdrop-filter: blur(4px);
+  background-color: rgba(col.$grey-100, 0.7);
+  border: 1px solid col.$grey-500;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: spacing(0.3);
+  padding: padding(0.5) padding(1);
+  width: fit-content;
+}
+
+.day {
+  color: col.$dark;
+  font-family: 'Arial Black', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+.month {
+  color: col.$grey-700;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.year {
+  color: col.$grey-700;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}

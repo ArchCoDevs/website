@@ -1,0 +1,93 @@
+@use 'reset.scss' as *;
+@use 'spacing' as *;
+@use 'overrides' as *;
+@use 'typography' as *;
+@use 'utilities/responsive.scss' as *;
+@use 'globals';
+
+// Global application styles can be found in styles/_globals.scss
+
+// Global classes
+// NOTE: Some global classes can be found in their respective stylesheets (e.g. typeography.scss)
+
+.db {
+  display: block;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-1 {
+  margin-bottom: margin(1);
+}
+
+.mb-2 {
+  margin-bottom: margin(2);
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-1 {
+  margin-top: margin(1);
+}
+
+.mt-2 {
+  margin-top: margin(2);
+}
+
+.pv-0 {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.pv-1 {
+  padding-bottom: padding(1);
+  padding-top: padding(1);
+}
+
+.pv-2 {
+  padding-bottom: padding(2);
+  padding-top: padding(2);
+}
+
+.ph-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.ph-1 {
+  padding-left: padding(1);
+  padding-right: padding(1);
+}
+
+.ph-2 {
+  padding-left: padding(2);
+  padding-right: padding(2);
+}
+
+// Sitemap specific classes
+
+.sitemap-header {
+  @include heading-large();
+
+  margin-bottom: margin(2);
+}
+
+.sitemap-section-header {
+  @include heading-medium();
+
+  margin: margin(2) 0;
+  text-transform: capitalize;
+}
+
+.sitemap-section-list {
+  display: grid;
+  gap: spacing(2);
+
+  @include mq(bp.$medium-small) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

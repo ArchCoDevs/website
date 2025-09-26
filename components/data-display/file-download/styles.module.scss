@@ -1,0 +1,36 @@
+.file-download {
+  display: flex;
+  place-content: center;
+  width: 100%;
+
+  .link {
+    align-items: flex-start;
+    color: col.$body-text;
+    display: flex;
+    font-size: type.$body-text-size;
+    gap: spacing(1);
+    text-decoration: underline;
+
+    &:hover {
+      .icon {
+        @include animate.wobble;
+      }
+    }
+  }
+
+  .icon {
+    fill: col.$primary;
+    height: 25px;
+    width: 25px;
+  }
+
+  .file-info {
+    display: flex;
+    flex-direction: column;
+    gap: spacing(0.5);
+  }
+
+  .name {
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,50 @@
+.raw-html {
+  margin: 0 auto;
+  overflow-x: auto;
+
+  &.centered {
+    align-items: center;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  table {
+    background-color: col.$grey-warm;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: col.$grey-900;
+    font-size: type.$small-text-size;
+    margin-bottom: margin(1);
+    width: 100%;
+
+    @include util.mq(bp.$medium-small) {
+      font-size: type.$body-text-size;
+    }
+  }
+
+  table tr {
+    background-color: col.$grey-200;
+  }
+
+  table tr:nth-child(even) {
+    background-color: #fff;
+  }
+
+  table thead tr {
+    background-color: col.$primary-darker;
+    color: col.$light;
+  }
+
+  table th {
+    font-weight: bold;
+  }
+
+  table td,
+  table th {
+    overflow-wrap: break-word;
+    padding: 1rem 2rem;
+  }
+}

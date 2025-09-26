@@ -1,0 +1,67 @@
+{
+  "root": true,
+  "extends": ["next/core-web-vitals", "plugin:prettier/recommended"],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "overrides": [
+    {
+      "files": ["**/*.json"],
+      "extends": ["plugin:json/recommended"]
+    },
+    {
+      "files": ["**/*.mdx"],
+      "extends": ["plugin:mdx/recommended"]
+    },
+    {
+      "files": ["**/*.test.*"],
+      "extends": ["plugin:jest-dom/recommended"]
+    },
+    {
+      "files": ["**/*.stories.*"],
+      "extends": ["plugin:storybook/recommended"],
+      "rules": {
+        "react-hooks/rules-of-hooks": 0
+      }
+    },
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "extends": ["plugin:@typescript-eslint/recommended"],
+      "rules": {
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": [
+          "error",
+          {
+            "argsIgnorePattern": "^_",
+            "varsIgnorePattern": "^_",
+            "caughtErrorsIgnorePattern": "^_"
+          }
+        ],
+        "react-hooks/exhaustive-deps": 0,
+        "@typescript-eslint/ban-ts-comment": 0,
+        "@typescript-eslint/no-empty-interface": [
+          "error",
+          {
+            "allowSingleExtends": true
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.md"],
+      "parser": "eslint-plugin-markdownlint/parser",
+      "extends": ["plugin:markdownlint/recommended"],
+      "rules": {
+        "markdownlint/md033": 0,
+        "markdownlint/md034": 0,
+        "markdownlint/md024": [
+          2,
+          {
+            "allow_different_nesting": true
+          }
+        ]
+      }
+    }
+  ]
+}

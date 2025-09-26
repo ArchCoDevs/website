@@ -1,0 +1,137 @@
+{
+  "address": "ARCH 19 VALENTIA PLACE, BRIXTON",
+  "use": "Storage",
+  "size_sq_ft": 870.0,
+  "size_sq_mt": 80.83,
+  "price_per_month": 500,
+  "price": 500,
+  "price_title": "£500 per month",
+  "latitude": 51.46294763,
+  "longitude": -0.11170187,
+  "reference": "BRX03802",
+  "energy_rating": "A",
+  "deposit": "1000.0",
+  "favourite": false,
+  "business_rates": 1100.0,
+  "insurance": 1200.0,
+  "service_charge": 1300.0,
+  "tag": "new",
+  "thumbnail": {
+    "url": "",
+    "alt_text": ""
+  },
+  "brochure_url": "https://www.thearchco.com/properties/BRX03803/brochure",
+  "supporting_image_list": [
+    {
+      "url": "/mocks/images/property-1.jpg",
+      "alt_text": "image description goes here"
+    },
+    {
+      "url": "/mocks/images/property-2.jpg",
+      "alt_text": "image description goes here"
+    },
+    {
+      "url": "/mocks/images/property-3.jpg",
+      "alt_text": "image description goes here"
+    },
+    {
+      "url": "/mocks/images/property-4.jpg",
+      "alt_text": "image description goes here"
+    },
+    {
+      "url": "/mocks/images/property-5.jpg",
+      "alt_text": "image description goes here"
+    },
+    {
+      "url": "/mocks/images/property-6.jpg",
+      "alt_text": "image description goes here"
+    }
+  ],
+  "feature_list": [
+    "Pallsade fencing and gate",
+    "Great location",
+    "Fully lined",
+    "Electric roller shutters",
+    "3-phase power supply",
+    "Fully glazed frontage",
+    "Gas supply"
+  ],
+  "travel_time_list": [
+    {
+      "journey_type": "Walk",
+      "journey_length": "5 Minutes",
+      "location": "Brixton Station"
+    },
+    {
+      "journey_type": "Train",
+      "journey_length": "5 Minutes",
+      "location": "Camden Station"
+    },
+    {
+      "journey_type": "Car",
+      "journey_length": "5 Minutes",
+      "location": "Embankment Station"
+    }
+  ],
+  "similar_rental_spaces": [
+    {
+      "address": "ARCH 19 VALENTIA PLACE, BRIXTON",
+      "use": "Storage",
+      "size_sq_ft": 870.0,
+      "size_sq_mt": 80.83,
+      "price": 500,
+      "price_title": "£500 per month",
+      "latitude": 51.46294763,
+      "longitude": -0.11170187,
+      "reference": "BRX03804",
+      "thumbnail": {
+        "url": "/mocks/images/property-7.jpg",
+        "alt_text": "image description goes here"
+      },
+      "postcode": "SW9 8JL",
+      "rental_space_id": 11,
+      "distance": 0.5,
+      "favourite": false
+    },
+    {
+      "address": "ARCH 19 VALENTIA PLACE, BRIXTON",
+      "use": "Storage",
+      "size_sq_ft": 870.0,
+      "size_sq_mt": 80.83,
+      "price": 500,
+      "price_title": "£500 per month",
+      "latitude": 51.46294763,
+      "longitude": -0.11170187,
+      "reference": "BRX03805",
+      "thumbnail": {
+        "url": "/mocks/images/property-7.jpg",
+        "alt_text": "image description goes here"
+      },
+      "postcode": "SW9 8JL",
+      "rental_space_id": 12,
+      "distance": 0.5,
+      "favourite": false
+    },
+    {
+      "address": "ARCH 19 VALENTIA PLACE, BRIXTON",
+      "use": "Storage",
+      "size_sq_ft": 870.0,
+      "size_sq_mt": 80.83,
+      "price": 500,
+      "price_title": "£500 per month",
+      "latitude": 51.46294763,
+      "longitude": -0.11170187,
+      "reference": "BRX03806",
+      "thumbnail": {
+        "url": "/mocks/images/property-7.jpg",
+        "alt_text": "image description goes here"
+      },
+      "postcode": "SW9 8JL",
+      "rental_space_id": 13,
+      "distance": 0.5,
+      "favourite": false
+    }
+  ],
+  "postcode": "SW9 8JL",
+  "rental_space_id": 10
+}

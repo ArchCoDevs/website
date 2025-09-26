@@ -1,0 +1,42 @@
+import * as Stories from './sanity-table-factory.stories';
+
+<Meta of={Stories} />
+
+<Title />
+
+<Description />
+
+As with other Factory components, the Sanity Table Factory is a wrapper around the Table component and all of its child
+components and provides a set of props that can be used to generate a working Table without having to handle any of the
+complexity of the components themselves.
+
+<Primary />
+
+<Controls />
+
+The SanityTableFactory can take `InfoTable` data from SanityCMS and render it as a table.
+
+<Tip type="note">
+  This is an extension of the TableFactory component but modified to work with
+  SanityCMS data. Take a look at the
+  [TableFactory](?path=/docs/components-factories-table-factory--docs) component
+  for more information and additional examples.
+</Tip>
+
+## Table Headers
+
+You can disable headers completely by setting the firstRowHeader prop to false.
+
+<Canvas withToolbar sourceState="shown" of={Stories.WithoutHeaderRow} />
+
+## Table Sorting
+
+You can also enable sorting on all columns by passing `sortable` an array with just '\*' as the only value.
+
+<Canvas withToolbar sourceState="shown" of={Stories.Sortable} />
+
+## Table Filtering
+
+You can also enable filtering on all columns by passing an array with just '\*' to the `filterable` prop.
+
+<Canvas withToolbar sourceState="shown" of={Stories.Filterable} />

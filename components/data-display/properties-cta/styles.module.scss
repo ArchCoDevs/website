@@ -1,0 +1,62 @@
+.properties-cta {
+  background-color: col.$primary-darker;
+  background-image:
+    url('./images/landmarks-1.svg'),
+    url('./images/landmarks-2.svg');
+  background-position: left bottom, right bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 35%, 18%;
+  color: col.$light;
+  display: flex;
+  flex-direction: column;
+  gap: spacing(1);
+  padding: padding(4) padding(2);
+  place-items: center;
+  text-align: center;
+}
+
+.title,
+.content {
+  max-width: bp.$medium-small;
+}
+
+.title {
+  @include type.heading-large();
+
+  font-weight: bold;
+  margin-bottom: margin(1);
+}
+
+.content {
+  @include type.body-text();
+
+  font-weight: bold;
+}
+
+.button {
+  @include util.button-primary();
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: padding(1) padding(4) !important;
+
+  span {
+    align-items: center;
+    display: flex;
+    gap: spacing(0.8);
+  }
+
+  svg {
+    fill: col.$light;
+    height: 15px;
+    width: 15px;
+  }
+
+  &:focus-visible,
+  &:hover {
+    svg {
+      @include animate.wobble();
+    }
+  }
+}

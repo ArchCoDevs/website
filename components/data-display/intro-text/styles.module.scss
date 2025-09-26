@@ -1,0 +1,27 @@
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  gap: spacing(1);
+  max-width: 600px;
+  padding: padding(2) 0;
+
+  &.centered {
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &.full-width {
+    max-width: 100%;
+  }
+
+  h1 {
+    @include type.heading-large();
+  }
+
+  p {
+    @include type.body-text();
+
+    font-weight: 600;
+  }
+}

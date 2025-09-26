@@ -1,0 +1,125 @@
+.image-row {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  min-height: 300px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+
+  @include util.mq(bp.$medium-small) {
+    grid-template-rows: 2fr 1fr;
+  }
+
+  &.dark {
+    .bottom {
+      background-color: col.$secondary;
+      color: col.$light;
+    }
+  }
+
+  &.sustainable {
+    .bottom {
+      background-color: col.$tertiary;
+      background-image: url('./images/leaves.svg'), url('./images/leaves.svg');
+      background-position: -15px bottom, calc(100% + 15px) bottom;
+      background-repeat: no-repeat, no-repeat;
+      background-size: 15%, 15%;
+      font-weight: bold;
+
+      @include util.mq(bp.$medium-small) {
+        background-size: 10%, 10%;
+      }
+    }
+  }
+
+  &.text-overlay {
+    .top,
+    .bottom {
+      inset: 0;
+      position: absolute;
+    }
+
+    .bottom {
+      background-color: rgba(col.$secondary, 0.75);
+      color: col.$light;
+      display: flex;
+      gap: spacing(2);
+      place-content: center;
+      z-index: 100;
+
+      @include util.mq(bp.$medium) {
+        padding: padding(2) padding(10);
+      }
+    }
+  }
+}
+
+.top {
+  position: relative;
+}
+
+.bottom {
+  align-items: center;
+  background-color: col.$light;
+  display: flex;
+  flex-direction: column;
+  padding: padding(2);
+
+  .title {
+    @include type.heading-large();
+
+    font-weight: bold;
+    margin-bottom: margin(1);
+  }
+}
+
+.image {
+  object-fit: cover;
+}
+
+/* Image Wrapper to contain image and attribution */
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+/* Attribution Box */
+.attribution-box {
+  background-color: col.$grey-100;
+  border-radius: 4px;
+  bottom: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: col.$grey-700;
+  font-size: 12px;
+  padding: spacing(0.3) spacing(0.5);
+  position: absolute;
+  right: 8px;
+}
+
+/* Caption Styling */
+.caption {
+  color: col.$grey-700;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: spacing(0.5);
+  text-align: center;
+}
+
+.content {
+  @include type.body-text();
+}
+
+.ctas {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: spacing(2);
+
+  @include util.mq(bp.$medium-small) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}

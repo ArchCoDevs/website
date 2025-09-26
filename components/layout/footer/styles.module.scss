@@ -1,0 +1,75 @@
+.footer {
+  background-color: col.$bg;
+  border-top: 40px solid col.$secondary;
+  display: grid;
+  gap: spacing(3);
+  grid-auto-rows: auto;
+  padding: padding(4);
+  place-items: center;
+}
+
+.logo {
+  fill: col.$primary;
+  height: 100px;
+  width: 100px;
+}
+
+.links {
+  display: grid;
+  grid-column-gap: spacing(5);
+  grid-template-columns: 1fr;
+  text-align: center;
+
+  @include util.mq(bp.$medium-small) {
+    grid-row-gap: spacing(2);
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.links li {
+  border-bottom: 1px solid col.$grey-300;
+  padding: padding(2) padding(3);
+}
+
+.link {
+  @include util.link();
+
+  color: col.$body-text;
+  font-size: 1.4rem;
+}
+
+.socials {
+  display: grid;
+  gap: spacing(2);
+  grid-auto-flow: column;
+
+  @include util.mq(bp.$medium-small) {
+    gap: spacing(4);
+  }
+}
+
+.social {
+  border-radius: 50%;
+  box-shadow: $drop-shadow;
+  display: flex;
+  padding: padding(1);
+  place-items: center;
+
+  svg {
+    fill: col.$body-text;
+    height: 22px;
+    width: 22px;
+  }
+
+  &:hover {
+    @include animate.wobble();
+  }
+}
+
+.legal {
+  @include type.small-text();
+
+  color: col.$grey-700;
+  margin-top: margin(2);
+  text-align: center;
+}

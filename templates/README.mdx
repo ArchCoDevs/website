@@ -1,0 +1,18 @@
+<Meta title="Docs" />
+
+# Templates
+
+Templates, like pages and partials are components which are allowed to have access
+to the application context.
+
+All templates should have a folder with the same name as the template and contain
+at least an `index.tsx` and a `[templatename].stories.tsx` file.
+
+Unless there are special requirements for a template which require custom documentation
+you do not need to create a [templatename].mdx file for the template.
+
+<Tip type="warning">
+  Testing light and dark modes on templates MUST be done via the storybook theme
+  switcher in the toolbar at the top of the page. The in-page theme switcher
+  will not work inside the storybook iframe.
+</Tip>

@@ -1,0 +1,20 @@
+<Meta title="Docs" />
+
+# Pages
+
+Pages, like templates and partials are components which are allowed to have access
+to the application context.
+
+All pages should have a folder with the same name as the page route and contain
+at least an `index.tsx` and a `[pagename].stories.tsx` file.
+
+Unless there are special requirements for a page which require custom documentation
+you do not need to create a [pagename].mdx file for the page.
+
+## Page Styling
+
+Generally speaking, pages should not have any styling. If you need to style a page
+you should create a new component or partial and style that instead. However, if
+the styling is specific to the page and not reusable, then it is acceptable to
+style the page directly. In this case, you should create a `[pagename].module.scss`
+file and import it into the page as you would for any other component.

@@ -1,0 +1,41 @@
+.skeleton {
+  @include util.skeleton();
+
+  display: block;
+
+  div {
+    visibility: hidden;
+  }
+}
+
+.is-rounded {
+  border-radius: $border-radius;
+}
+
+.is-squared {
+  border-radius: 0;
+}
+
+.is-circle {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.is-inline {
+  display: inline-block;
+  line-height: 1;
+}
+
+.child-is-p:not(:last-child) {
+  margin-bottom: margin(1);
+}
+
+.child-is-li,
+.child-is-list-item {
+  line-height: 1;
+}
+
+.child-is-li:not(:last-child),
+.child-is-list-item:not(:last-child) {
+  margin-bottom: margin(1);
+}

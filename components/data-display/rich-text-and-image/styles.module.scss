@@ -1,0 +1,30 @@
+.rich-text-and-image {
+  display: grid;
+  gap: spacing(1);
+
+  @include util.mq(bp.$medium) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: unset;
+  }
+
+  &.swap-sides {
+    .image {
+      order: 1;
+    }
+
+    .rich-text {
+      order: 2;
+    }
+  }
+}
+
+.image {
+  aspect-ratio: 4/3;
+  border-radius: $border-radius;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,25 @@
+.input {
+  @include util.base-input;
+  @include util.focus-visible;
+
+  appearance: none;
+  aspect-ratio: 1/1;
+  border: 2px solid col.$primary;
+  border-radius: 50%;
+  cursor: inherit;
+  height: 22px;
+  padding: padding(0.5);
+  width: auto;
+
+  &:checked {
+    background-color: col.$light;
+    box-shadow: inset 0 0 1px 6px col.$primary, inset 0 0 0 2px col.$border;
+  }
+
+  &:disabled {
+    background-color: col.$grey-300;
+    border-color: col.$grey-400;
+    box-shadow: none;
+    cursor: not-allowed;
+  }
+}

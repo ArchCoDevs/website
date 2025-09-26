@@ -1,0 +1,25 @@
+import * as Stories from './chip.stories';
+
+<Meta of={Stories} />
+
+<Title />
+
+<Description />
+
+<Tip type="warning">
+  This component should not be used for displaying alerts or notifications. Use
+  the Snackbar component instead.
+</Tip>
+
+## Basic Chip
+
+By default, a chip only requires the 'text' prop to be passed in. If no other props
+are provided then the chip will be rendered with the default styling.
+
+<Canvas withToolbar sourceState="shown" of={Stories.Default} />
+
+## With Icon
+
+To add an icon to the chip, pass the 'icon' prop. The icon prop should be a string (see the icon library for available icons).
+
+<Canvas withToolbar sourceState="shown" of={Stories.WithIcon} />

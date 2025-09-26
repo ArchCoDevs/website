@@ -1,0 +1,16 @@
+[
+  {
+    "_createdAt": "2024-07-31T09:49:49Z",
+    "_rev": "gYX0kg9dnK7EiG2WBXHx2U",
+    "_type": "errors",
+    "_id": "errors",
+    "_updatedAt": "2024-07-31T09:50:30Z",
+    "errors": {
+      "fourohfour": "This page could not be found",
+      "fourhundred": "Bad request",
+      "property": "We could not find a property that matches those details",
+      "fivehundred": "Internal server error"
+    },
+    "_originalId": "errors"
+  }
+]

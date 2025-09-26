@@ -1,0 +1,99 @@
+.contact-card {
+  @include util.card();
+
+  background-color: col.$tertiary;
+  grid-template-rows: 180px auto;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: spacing(2);
+  justify-content: center;
+  margin: margin(1) 0;
+}
+
+.button {
+  @include util.button-secondary();
+
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  gap: spacing(1);
+  justify-content: center;
+  width: 100%;
+
+  svg {
+    fill: col.$primary;
+    height: 16px;
+    width: 16px;
+  }
+
+  &:hover {
+    svg {
+      @include animate.wobble();
+    }
+  }
+}
+
+.tfl-button {
+  background-color: col.$light;
+  border: 1px solid col.$grey-400;
+  display: grid;
+  gap: spacing(0.5);
+  grid-template-columns: 1fr 2.5fr;
+  padding: 3px;
+
+  .logo {
+    background-image: url('./images/tfl-logo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: margin(0.1) margin(0.5);
+  }
+
+  .text {
+    background-color: col.$grey-800;
+    color: col.$light;
+    font-size: type.$small-text-size;
+    font-weight: bold;
+    padding: padding(0.5) padding(2);
+    text-align: center;
+    text-transform: uppercase;
+
+    @include util.mq(bp.$small) {
+      font-size: type.$body-text-size;
+    }
+  }
+
+  &:hover {
+    border-color: col.$grey-500;
+
+    .logo,
+    .text {
+      filter: brightness(1.6);
+    }
+  }
+}
+
+.title {
+  @include type.heading-medium();
+
+  font-weight: bold;
+}
+
+.top {
+  position: relative;
+}
+
+.bottom {
+  background-color: col.$grey-100;
+  display: flex;
+  flex-direction: column;
+  gap: spacing(2);
+  padding: padding(3);
+
+  p {
+    @include type.body-text();
+  }
+}

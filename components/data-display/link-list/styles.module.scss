@@ -1,0 +1,29 @@
+.link-list,
+.link-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: spacing(1.5);
+}
+
+.title {
+  @include type.body-text();
+
+  font-weight: bold;
+}
+
+.link {
+  @include util.link();
+
+  align-items: center;
+  display: grid;
+  gap: spacing(0.5);
+  grid-template-columns: 15px auto;
+  text-decoration: underline;
+
+  svg {
+    fill: col.$primary;
+    height: 13px;
+    transform: rotate(90deg);
+    width: 13px;
+  }
+}

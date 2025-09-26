@@ -1,0 +1,462 @@
+{
+  "metadata": {
+    "_type": "metadata",
+    "description": "We offer a selection of commercial units available to rent in Southwark, in areas such as Bermondsey, Peckham, and the surrounding neighbourhoods which make up the borough.",
+    "title": "Renting commercial property in Brixton"
+  },
+  "_rev": "3aaVYl9ytaPbOXDl48BrOa",
+  "title": "Renting commercial property in Brixton",
+  "_createdAt": "2024-07-23T16:04:52Z",
+  "slug": {
+    "current": "renting-commercial-property-in-brixton",
+    "_type": "slug"
+  },
+  "contactUsCTATitle": "Units available to rent",
+  "content": [
+    {
+      "richText": [
+        {
+          "_type": "block",
+          "style": "h3",
+          "_key": "4a011c220bf0",
+          "markDefs": [],
+          "children": [
+            {
+              "marks": [],
+              "text": "Things you need to know about renting commercial property in Southwark",
+              "_key": "288939d07dc00",
+              "_type": "span"
+            }
+          ]
+        },
+        {
+          "style": "normal",
+          "_key": "698a0ba60539",
+          "markDefs": [],
+          "children": [
+            {
+              "_key": "7185316c98920",
+              "_type": "span",
+              "marks": [],
+              "text": "Southwark has long been a popular borough for those looking for good value commercial property, with a wide range of railway arches available offering a unique prospect for your burgeoning business."
+            }
+          ],
+          "_type": "block"
+        },
+        {
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Home to a number of small business owners who have set up shop in Southwark to catch footfall and a large residential community, Southwark boasts a variety of commercial spaces available for lease. These are suitable for accommodating businesses of varying sizes, preferences, and space requirements. A safe place to live and work, Southwark is diverse, architecturally beautiful, and full of cultural activities for after work, or to catch as a tourist/passing trade.",
+              "_key": "b24588586a0b0"
+            }
+          ],
+          "_type": "block",
+          "style": "normal",
+          "_key": "0c7a96b16fc0"
+        },
+        {
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Southwark transport options",
+              "_key": "e9860f46ea6f0"
+            }
+          ],
+          "_type": "block",
+          "style": "h4",
+          "_key": "fef5153ac5da",
+          "markDefs": []
+        },
+        {
+          "markDefs": [],
+          "children": [
+            {
+              "_key": "2dd06e460aea0",
+              "_type": "span",
+              "marks": [],
+              "text": "Covering a large footprint south of the River Thames, Southwark is well connected by public transport options, a wider rail network, and major roads"
+            }
+          ],
+          "_type": "block",
+          "style": "normal",
+          "_key": "74d5ea8093cc"
+        },
+        {
+          "style": "normal",
+          "_key": "2210c60200b1",
+          "markDefs": [],
+          "children": [
+            {
+              "_key": "4bd33f6e5ff00",
+              "_type": "span",
+              "marks": [],
+              "text": "From London Bridge station in the north of the borough, down to the outer reaches of Dulwich, and the famous line of railway arches that line Bermondsey there are around a dozen tube stations, and a handful of overground stations in Southwark, connecting the area to the rest of London and beyond. While most of these are near the river in the north of the borough, there are options across Southwark, including several Santander Cycle stands, and a few Thames Clipper stations for easy access north of the Thames."
+            }
+          ],
+          "_type": "block"
+        },
+        {
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Commercial property in Southwark has a wide appeal for both staff and customers – offering excellent nightlife, sporting arenas and food markets to keep everyone entertained. The diverse location makes a great setting for commercial, retail and industrial uses – from bars and restaurants to warehouses and light industrial units.",
+              "_key": "a5da1bd80e990"
+            }
+          ],
+          "_type": "block",
+          "style": "normal",
+          "_key": "327c106b6c51",
+          "markDefs": []
+        },
+        {
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "How much does it cost to rent commercial property in Southwark?",
+              "_key": "006df531ab3c0"
+            }
+          ],
+          "_type": "block",
+          "style": "h4",
+          "_key": "586727088a8a"
+        },
+        {
+          "_type": "block",
+          "style": "normal",
+          "_key": "687b4dab8c0b",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "The price per sq. ft. that you’ll pay for a rental property in Southwark depends on a number of factors including location, finish/fit out, and intended usage of the premises. If you’re just looking for a guide, you can expect to pay between £1,300 and £13,000 month, or equivalent £15,000 and £160,000 per annum for a railway arch space in Southwark.",
+              "_key": "d9b547a085ac0"
+            }
+          ]
+        }
+      ],
+      "_type": "twoColumnRichText",
+      "_key": "3353f09a4af2"
+    },
+    {
+      "cards": [
+        {
+          "linkText": "Discover Camden",
+          "_key": "1d72669aaa17",
+          "linkUrl": "https://www.bbc.co.uk",
+          "isFeatured": false,
+          "content": "Looking for an industrial unit to rent in London? View what we have available to rent in Lambeth.",
+          "title": "Camden",
+          "image": {
+            "alt_text": "Row of Arches",
+            "id": "wxcqwn3mv3w5jffvx55g63xf",
+            "url": "https://cdn.bfldr.com/IJXUD54I/as/tr73f9f8kj5jspxqkqg88trq/Row_of_Arches?auto=webp&format=png"
+          },
+          "ctaType": "link",
+          "_type": "contentCard"
+        },
+        {
+          "image": {
+            "alt_text": "Row of Arches",
+            "id": "wxcqwn3mv3w5jffvx55g63xf",
+            "url": "https://cdn.bfldr.com/IJXUD54I/as/tr73f9f8kj5jspxqkqg88trq/Row_of_Arches?auto=webp&format=png"
+          },
+          "ctaType": "link",
+          "_type": "contentCard",
+          "content": "Looking for an industrial unit to rent in London? View what we have available to rent in Lambeth.",
+          "linkUrl": "https://www.bbc.co.uk",
+          "linkText": "Discover Camden",
+          "_key": "4e55ef4252db8905d80655dfe444cdc9",
+          "isFeatured": false,
+          "title": "Camden"
+        },
+        {
+          "_key": "91ed5afcd9faef855ec77f5c2ea6581a",
+          "title": "Camden",
+          "content": "Looking for an industrial unit to rent in London? View what we have available to rent in Lambeth.",
+          "linkText": "Discover Camden",
+          "_type": "contentCard",
+          "isFeatured": false,
+          "ctaType": "link",
+          "linkUrl": "https://www.bbc.co.uk",
+          "image": {
+            "url": "https://cdn.bfldr.com/IJXUD54I/as/tr73f9f8kj5jspxqkqg88trq/Row_of_Arches?auto=webp&format=png",
+            "alt_text": "Row of Arches",
+            "id": "wxcqwn3mv3w5jffvx55g63xf"
+          }
+        }
+      ],
+      "_type": "threeCardSection",
+      "_key": "27622ff9e7b3"
+    },
+    {
+      "_type": "richText",
+      "_key": "75b451da7f76",
+      "richText": [
+        {
+          "style": "h3",
+          "_key": "ca934814d7f1",
+          "markDefs": [],
+          "children": [
+            {
+              "marks": [],
+              "text": "Not sure about Southwark?",
+              "_key": "34698469b6f9",
+              "_type": "span"
+            }
+          ],
+          "_type": "block"
+        },
+        {
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Southwark is a large area of south London covering Camberwell, Peckham, Bermondsey, as well as south towards Dulwich. If you’ve looked at some of the available units in Southwark and aren’t sure if it’s the ideal fit for your business, browse the nearby areas of Camden, Lambeth, or Tower Hamlets where we have several other properties for rent.",
+              "_key": "939a96c2f9370"
+            }
+          ],
+          "_type": "block",
+          "style": "normal",
+          "_key": "759eee9052d2"
+        }
+      ]
+    },
+    {
+      "_type": "richText",
+      "_key": "ba414a20c181",
+      "richText": [
+        {
+          "children": [
+            {
+              "marks": [],
+              "text": "Southwark: FAQs",
+              "_key": "dc561d2a1113",
+              "_type": "span"
+            }
+          ],
+          "_type": "block",
+          "style": "h3",
+          "_key": "aa4260ca6a7b",
+          "markDefs": []
+        }
+      ]
+    },
+    {
+      "_type": "twoColumnRichText",
+      "_key": "ba5db80e8d60",
+      "richText": [
+        {
+          "style": "h4",
+          "_key": "fa46e321af53",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Is Southwark convenient for suppliers and customers?",
+              "_key": "fecd1b3281450"
+            }
+          ],
+          "_type": "block"
+        },
+        {
+          "markDefs": [],
+          "children": [
+            {
+              "text": "Located conveniently just south of the river, Southwark is easy to get to whether by car or by public transport. The borough is located just off the A3 so access is easy via London Bridge, or Tower Bridge just to its east. Our Southwark railway arches come with dedicated yards which are ideal for unloading stock, or for visiting clients, business partners and customers.",
+              "_key": "9de6360130350",
+              "_type": "span",
+              "marks": []
+            }
+          ],
+          "_type": "block",
+          "style": "normal",
+          "_key": "8ddb17dedaf6"
+        },
+        {
+          "_type": "block",
+          "style": "normal",
+          "_key": "e11b3d3324c4",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "For those looking to make the most of public transport, Southwark is well placed, with several underground and overground stations, bus routes covering much of the area, and cycle lanes for those taking the green option.",
+              "_key": "cc04de17a0890"
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "style": "h4",
+          "_key": "877a60a2d768",
+          "markDefs": [],
+          "children": [
+            {
+              "marks": [],
+              "text": "Is Southwark a safe place to work and start a business?",
+              "_key": "5ba662d4acd80",
+              "_type": "span"
+            }
+          ]
+        },
+        {
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Southwark is generally a very safe area, with many thriving commercial businesses operating within the area. If you’re considering opening a business premises in Southwark, you needn’t be worried about your safety as Southwark boasts a very average crime rate — that is to say, not much different from the UK average. We would always recommend securing your unit and employing CCTV and other basic security measures where possible, but crime and general safety shouldn’t dissuade you from a commercial property in south London.",
+              "_key": "9c61dd08417d0"
+            }
+          ],
+          "_type": "block",
+          "style": "normal",
+          "_key": "b3f9cb6f4a17"
+        },
+        {
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Do the railway units in Southwark receive good footfall?",
+              "_key": "98930210d3900"
+            }
+          ],
+          "_type": "block",
+          "style": "h4",
+          "_key": "ee977fbef252"
+        },
+        {
+          "style": "normal",
+          "_key": "91b87d0d81b9",
+          "markDefs": [],
+          "children": [
+            {
+              "text": "With local landmarks like many of London’s iconic bridges, skyscrapers like The Shard, as well as historic monuments like the Globe Theatre, Southwark Cathedral, and Crossbones Graveyard, there should be plenty of tourists and visitors to London in Southwark, particularly in the north of the borough. Areas a little further to the south like Peckham and Camberwell are heavily residential, with thousands of London residents heading to and from work each day.",
+              "_key": "90d1e63e1dd50",
+              "_type": "span",
+              "marks": []
+            }
+          ],
+          "_type": "block"
+        },
+        {
+          "_key": "34d2d1d28aef",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Why Choose The Arch Company?",
+              "_key": "cb47edddd7db0"
+            }
+          ],
+          "_type": "block",
+          "style": "h4"
+        },
+        {
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "We’re the UK’s largest small business landlord, facilitating the day-to-day operations of thousands of businesses across the UK. Our 5000+ railway arches are home to a diverse and passionate mix of business owners ranging from hairdressers to large scale industrial units, microbreweries, and so much more.",
+              "_key": "4c058dae76cb0"
+            }
+          ],
+          "_type": "block",
+          "style": "normal",
+          "_key": "078b9f2014eb",
+          "markDefs": []
+        },
+        {
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "Basing your business in an archway is the perfect choice for many SMEs. Project 1000 is our plan to invest £200 million to bring one thousand empty or derelict spaces into use by 2030, creating communities of businesses and making the most of spaces which are otherwise unused. Choosing a railway arch in Lambeth for your business offers flexibility, prime locations, a close network of similar-minded business owners, and a unique space to launch or grow your business. Find out more about The Arch Company here.",
+              "_key": "00569c73c16a0"
+            }
+          ],
+          "_type": "block",
+          "style": "normal",
+          "_key": "b869fd53303a"
+        },
+        {
+          "style": "normal",
+          "_key": "20abc0041bd5",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "marks": [],
+              "text": "",
+              "_key": "43d7c9289a470"
+            }
+          ],
+          "_type": "block"
+        }
+      ]
+    }
+  ],
+  "pageIntroText": "We offer a selection of commercial units available to rent in Southwark, in areas such as Bermondsey, Peckham, and the surrounding neighbourhoods which make up the borough.",
+  "contactUsCTADescription": "Take a look at what we have available below and enquire today if you think one of the spaces may be perfect for your business.",
+  "heroImage": {
+    "alt_text": "Camden Town Brewery | Camden",
+    "id": "5jq84m83hrkh298bxbskpqkp",
+    "url": "https://cdn.bfldr.com/IJXUD54I/as/w3bgbwjnts9rmzjfpmp3c96g/Camden_Town_Brewery__Camden?auto=webp&format=png"
+  },
+  "_id": "511c0aa6-9461-4258-9114-d132568c6c4d",
+  "textArea": {
+    "_type": "richText",
+    "richText": [
+      {
+        "markDefs": [],
+        "children": [
+          {
+            "text": "Our railway arch properties are conveniently situated close to major transportation hubs, providing effortless access to central London. They offer great value and versatility, catering to a wide range of requirements. Whether you need commercial space, a bar, cafe, small restaurant, office space, or industrial premises, our units are suitable for a diverse set of business ventures. Additionally, we provide storage solutions to meet your needs.",
+            "_key": "5a95a14dcd810",
+            "_type": "span",
+            "marks": []
+          }
+        ],
+        "_type": "block",
+        "style": "normal",
+        "_key": "f5ed54f57c41"
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "_key": "0945c727c2af",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "Explore our property in Southwark that’s suitable for commercial use below, and don’t hesitate to contact us today if you’re interested in securing a space for your business.",
+            "_key": "5ab978d477b50"
+          }
+        ]
+      }
+    ]
+  },
+  "parentLocation": {
+    "_ref": "3ba70f03-7ec0-4bc0-8c64-a54d4c608d32",
+    "_type": "reference"
+  },
+  "_type": "featuredLocationsSub",
+  "_updatedAt": "2024-07-29T13:57:52Z",
+  "_originalId": "511c0aa6-9461-4258-9114-d132568c6c4d"
+}

@@ -1,0 +1,17 @@
+@use './dark-mode.scss' as *;
+@use '../colours' as col;
+@use '../vars' as *;
+
+@mixin card() {
+  background-color: col.$light;
+  border-radius: $border-radius;
+  box-shadow: $drop-shadow;
+  display: grid;
+  grid-template-rows: 1fr;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card {
+  @include card();
+}

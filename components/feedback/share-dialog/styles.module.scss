@@ -1,0 +1,50 @@
+.share-dialog {
+  @include util.card();
+
+  gap: spacing(2);
+  padding: padding(2);
+  place-content: center;
+
+  .inner {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    gap: spacing(1);
+    height: fit-content;
+  }
+
+  h2 {
+    @include type.heading-small();
+
+    font-weight: 900;
+    margin-bottom: margin(2);
+  }
+
+  .button {
+    display: flex;
+    padding: padding(1.2) padding(2);
+  }
+
+  p {
+    @include type.body-text();
+  }
+
+  .social-media {
+    display: flex;
+    gap: spacing(1);
+    justify-content: center;
+
+    svg {
+      height: 20px;
+      width: 20px;
+    }
+
+    a:hover {
+      cursor: pointer;
+
+      svg {
+        @include animate.wobble();
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.fieldset {
+  padding: padding(2);
+
+  &.card {
+    @include util.card();
+  }
+}
+
+.fieldset + .fieldset {
+  &.card {
+    margin-top: $component-spacing;
+
+    &:last-of-type {
+      margin-bottom: $component-spacing;
+    }
+  }
+
+  &.show-border {
+    border-top: 1px dotted col.$border;
+  }
+}
+
+.legend {
+  height: 0;
+  left: -9999px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top: -9999px;
+}
+
+.legend-hidden {
+  display: none;
+}
+
+.fake-legend {
+  @include type.heading-small();
+
+  display: block;
+  margin-bottom: margin(2);
+}
+
+.description {
+  @include type.body-text();
+
+  margin-bottom: margin(2);
+  margin-top: margin(-1);
+}

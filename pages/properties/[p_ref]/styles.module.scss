@@ -1,0 +1,134 @@
+@mixin section {
+  padding: padding(1.5) 0;
+
+  @include util.mq(bp.$medium-small) {
+    border: 0;
+    margin: 0;
+    padding: padding(1) padding(1);
+  }
+}
+
+.section {
+  @include section();
+
+  &-border {
+    @include section();
+
+    border: 1px solid col.$grey-400;
+    margin: 0;
+    padding: padding(2);
+  }
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: margin(2);
+
+  @include util.mq(bp.$medium-small) {
+    @include type.heading-medium();
+
+    font-family: 'Arial Black', sans-serif;
+  }
+}
+
+.list {
+  display: flex;
+  flex-flow: column wrap;
+  gap: spacing(1);
+  justify-content: space-between;
+  width: 100%;
+
+  @include util.mq(bp.$medium-small) {
+    flex-direction: row;
+  }
+
+  h3 {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: margin(0.5);
+  }
+}
+
+.flex-lease-bar {
+  background-color: darken(col.$primary, 14%);
+  color: col.$light;
+  display: flex;
+  font-weight: bold;
+  gap: spacing(1);
+  margin: margin(1) 0;
+  padding: padding(1);
+  place-content: center;
+  place-items: center;
+  width: 100%;
+
+  svg {
+    height: 13px;
+    width: 15px;
+  }
+}
+
+.short-list {
+  display: grid;
+  gap: spacing(2);
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin: 0 auto;
+
+  @include util.mq(bp.$medium-small) {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+.map {
+  height: 400px;
+  margin: 0 auto;
+  margin-top: margin(2);
+  width: 100%;
+
+  @include util.mq(bp.$medium-small) {
+    height: 400px;
+  }
+}
+
+.grid {
+  grid-auto-rows: unset;
+  margin-bottom: 0;
+
+  div:last-child p {
+    margin-bottom: 0;
+  }
+}
+
+.grid-list {
+  display: grid;
+  font-weight: bold;
+  gap: spacing(2);
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin: 0 auto;
+
+  @include util.mq(bp.$medium-small) {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+.list,
+.grid-list {
+  li {
+    list-style-type: disc;
+    margin-left: margin(2);
+    padding-left: padding(0.5);
+
+    &::marker {
+      color: col.$primary;
+    }
+  }
+}
+
+.hr {
+  border: 0;
+  padding-top: padding(1);
+
+  @include util.mq(bp.$medium-small) {
+    border-top: 1px solid col.$grey-400;
+    padding-top: 0;
+  }
+}

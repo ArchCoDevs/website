@@ -1,0 +1,30 @@
+.property-not-found {
+  section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: spacing(1);
+    justify-content: center;
+    padding: padding(4) 0;
+  }
+
+  h1 {
+    @include type.heading-large();
+
+    font-weight: 900;
+    margin-bottom: margin(2);
+  }
+
+  p {
+    line-height: 1.8;
+    max-width: 800px;
+    text-align: center;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid col.$grey-300;
+    margin: margin(2) 0;
+    width: 100%;
+  }
+}

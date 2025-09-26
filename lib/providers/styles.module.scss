@@ -1,0 +1,21 @@
+.toasts-container {
+  align-items: flex-end;
+  align-items: flex-start;
+  bottom: 0;
+  display: flex;
+  gap: margin(2);
+  left: 0;
+  padding: padding(2) padding(2.5);
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 2000;
+}
+
+.toasts-container-inner {
+  display: flex;
+  flex-direction: column;
+  gap: margin(1);
+  width: 100%;
+}

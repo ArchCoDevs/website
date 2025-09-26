@@ -1,0 +1,122 @@
+.rich-text {
+  @include util.mq(bp.$medium) {
+    &.columns-2 {
+      column-count: 2;
+      column-gap: 2rem;
+    }
+
+    &.columns-3 {
+      column-count: 3;
+      column-gap: 2rem;
+    }
+  }
+
+  &.centered {
+    text-align: center;
+  }
+
+  h2 {
+    @include type.heading-large();
+
+    line-height: 1.4;
+    margin-bottom: margin(1);
+  }
+
+  h3 {
+    @include type.heading-medium();
+
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: margin(1);
+  }
+
+  h4 {
+    @include type.heading-small();
+
+    line-height: 1.3;
+    margin-bottom: margin(2);
+  }
+
+  h5 {
+    @include type.body-text();
+
+    font-weight: bold;
+    margin-bottom: margin(2);
+  }
+
+  p {
+    @include type.body-text();
+
+    line-height: 1.8;
+    margin-bottom: margin(2);
+    // negative margin used to counteract the increased line-height pushing the text down
+    margin-top: -5px;
+    min-height: type.$body-text-size;
+  }
+
+  blockquote {
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: margin(2);
+    text-align: center;
+  }
+
+  /**
+     * Only one H1 is allowed per page, so we can use this to prevent
+     * the rich text component displaying any H1s.
+     */
+  h1 {
+    color: col.$danger;
+    font-size: type.$heading-large-size;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 1rem;
+
+    &::before {
+      background-color: col.$danger;
+      color: col.$light;
+      content: '!';
+      float: left;
+      font-size: 2rem;
+      margin-right: 1rem;
+      padding: padding(1);
+      text-align: center;
+    }
+
+    &::after {
+      color: col.$danger;
+      content: 'H1 tags are not allowed in rich text';
+      display: block;
+      font-size: 2rem;
+    }
+  }
+
+  a {
+    @include util.link();
+  }
+
+  p a {
+    text-decoration: underline;
+  }
+
+  ul,
+  ol {
+    margin-bottom: margin(2);
+    padding-left: 1.5rem;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  li {
+    @include type.body-text();
+
+    margin-bottom: margin(0.2);
+  }
+}

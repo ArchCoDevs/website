@@ -1,0 +1,47 @@
+.label {
+  @include util.base-input-label();
+}
+
+.pos-above {
+  display: block;
+  margin-bottom: margin(1);
+
+  &.has-child {
+    margin-bottom: unset;
+
+    > * {
+      margin-top: margin(1);
+    }
+  }
+}
+
+.pos-before,
+.pos-after {
+  align-items: center;
+  display: flex;
+  gap: spacing(1);
+
+  &.required {
+    .asterisk {
+      margin-left: margin(-1);
+    }
+  }
+
+  .label-text {
+    display: block;
+  }
+}
+
+.large {
+  @include type.large-text();
+}
+
+.asterisk {
+  @include type.body-text();
+
+  color: col.$danger;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1;
+  margin-left: margin(0.2);
+}

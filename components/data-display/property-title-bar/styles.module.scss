@@ -1,0 +1,115 @@
+.icon {
+  fill: col.$primary;
+}
+
+.property-title-bar {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  margin-top: margin(1);
+
+  .icon {
+    display: none;
+
+    @include util.mq(bp.$medium-small) {
+      display: inline-block;
+      height: 28px;
+      margin-top: 0;
+      width: 28px;
+    }
+  }
+}
+
+.share-and-save {
+  display: flex;
+  gap: spacing(1);
+
+  @include util.mq(bp.$medium-small) {
+    gap: spacing(2);
+  }
+
+  .icon {
+    display: block;
+    height: 18px;
+    width: 18px;
+  }
+
+  .text {
+    display: none;
+
+    @include util.mq(bp.$medium-small) {
+      display: inline-block;
+    }
+  }
+
+  a,
+  button {
+    align-items: center;
+    background-color: transparent;
+    color: col.$body-text;
+    cursor: pointer;
+    display: flex;
+    font-size: type.$body-text-size;
+    gap: spacing(1);
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      text-decoration: underline;
+
+      .icon {
+        @include animate.wobble();
+      }
+    }
+  }
+}
+
+.address,
+.price {
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  gap: spacing(1);
+  margin-bottom: margin(1);
+
+  @include util.mq(bp.$medium-small) {
+    @include type.heading-large();
+
+    margin-bottom: margin(2);
+
+    .ppm {
+      @include type.heading-medium();
+
+      font-size: type.$heading-large-size;
+    }
+  }
+
+  .ppm {
+    border-left: 1px solid col.$body-text;
+    font-weight: normal;
+    margin-left: margin(1);
+    padding-left: padding(2);
+  }
+}
+
+.share-modal > div {
+  background-color: transparent;
+}
+
+.share-dialog {
+  height: 150px !important;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+
+  @include util.mq(bp.$medium-small) {
+    height: unset;
+    left: unset;
+    position: unset;
+    top: unset;
+    transform: unset;
+    width: unset;
+  }
+}

@@ -1,0 +1,89 @@
+.cost-breakdown {
+  display: grid;
+  filter: drop-shadow(0 0 1px rgba(0, 0, 0, 1));
+  grid-template-rows: 36px 1fr;
+
+  @include util.mq(bp.$medium-small) {
+    height: 100%;
+  }
+}
+
+.table {
+  border-bottom-left-radius: $border-radius-md;
+  border-bottom-right-radius: $border-radius-md;
+  display: block;
+  height: 100%;
+  overflow: hidden;
+
+  @include util.mq(bp.$medium-small) {
+    display: table;
+  }
+
+  td,
+  th {
+    display: inline-block;
+    width: 50%;
+
+    @include util.mq(bp.$medium-small) {
+      display: table-cell;
+      padding: padding(1.5) padding(2);
+    }
+  }
+}
+
+.row-th {
+  font-weight: normal;
+}
+
+.row-value {
+  font-weight: bold;
+  text-align: right;
+}
+
+.total-row {
+  th,
+  td {
+    border-top: 1px solid col.$grey-800;
+    font-weight: bold;
+  }
+}
+
+.disclaimer-row {
+  th,
+  td {
+    font-size: smaller;
+    font-style: italic;
+    padding: padding(0) padding(2) padding(1.5) padding(2);
+  }
+}
+
+.tab-button {
+  background-color: col.$grey-400;
+  border-radius: 15px 15px 0 0 !important;
+  color: col.$body-text;
+  min-width: 0;
+
+  &:first-of-type {
+    box-shadow: inset -4px -3px 4px -4px col.$grey-500;
+  }
+
+  &:last-of-type {
+    box-shadow: inset 0 -3px 4px -4px col.$grey-500;
+  }
+
+  &.active {
+    background-color: col.$grey-warm;
+    box-shadow: none;
+    cursor: default;
+    pointer-events: none;
+
+    @include util.mq(bp.$medium-small) {
+      font-weight: bold;
+    }
+  }
+
+  &:hover {
+    background-color: col.$alt-panel-bg;
+    filter: unset !important;
+  }
+}

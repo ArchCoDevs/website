@@ -1,0 +1,80 @@
+@mixin pagination-item {
+  background-color: col.$light;
+  border: 1px solid col.$grey-800;
+  border-radius: $border-radius;
+  display: flex;
+  font-size: type.$body-text-size;
+  height: 3rem;
+  min-width: 3rem;
+  padding: padding(0.5) padding(1);
+  place-content: center;
+  place-items: center;
+
+  &:not(:disabled) {
+    cursor: pointer;
+
+    &:hover {
+      background-color: col.$primary-darker;
+      border-color: col.$primary-darker;
+      color: col.$light;
+
+      svg {
+        fill: col.$light;
+      }
+    }
+  }
+
+  &:disabled {
+    border-color: col.$grey-500;
+    cursor: not-allowed;
+
+    svg {
+      filter: grayscale(1);
+    }
+  }
+}
+
+.pagination-container {
+  align-items: center;
+  display: flex;
+  gap: spacing(0.5);
+  max-height: 4rem;
+
+  @include util.mq(bp.$medium-small) {
+    gap: spacing(1);
+  }
+}
+
+.pagination-item {
+  @include pagination-item();
+
+  &.selected {
+    background-color: col.$grey-200;
+    border-color: col.$grey-200;
+  }
+
+  &.previous,
+  &.next {
+    svg {
+      fill: col.$primary;
+      height: 10px;
+      width: 10px;
+    }
+  }
+
+  &.ellipsis {
+    color: col.$body-text;
+  }
+
+  &.previous {
+    svg {
+      transform: rotate(-90deg);
+    }
+  }
+
+  &.next {
+    svg {
+      transform: rotate(90deg);
+    }
+  }
+}

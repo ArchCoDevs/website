@@ -1,0 +1,17 @@
+@use '../colours' as col;
+
+@mixin focus-visible-style($colour: col.$primary-darker) {
+  // Color if exists or primary-darker
+  outline: 2px solid $colour;
+  outline-offset: 2px;
+}
+
+@mixin focus-visible($colour: col.$primary-darker) {
+  &:focus-visible {
+    @include focus-visible-style($colour);
+  }
+}
+
+.focus-visible {
+  @include focus-visible-style();
+}

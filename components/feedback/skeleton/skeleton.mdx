@@ -1,0 +1,79 @@
+import * as Stories from './skeleton.stories';
+
+<Meta of={Stories} />
+
+<Title />
+
+<Description />
+
+<Tip>
+  All skeletons in the storybook stories have `isLoading` set to `true`, with
+  the exception of the 'toggle loading' story. Use the controls to see the
+  skeleton in its different states in the other stories.
+</Tip>
+
+<Primary />
+
+<Controls />
+
+<Tip note="note">
+  This component is used to provide you with the tools to create skeletons for
+  your components. There is also a `skeleton()` mixin that you can use to create
+  skeletons for your components (see the 'making a skeleton section below').
+</Tip>
+
+## Skeleton types
+
+### Rectangle (default)
+
+The default skeleton is a rectangle. It can be used for any component where you want to show a rectangle skeleton. The default example above is a rectangle skeleton.
+
+### Circle
+
+The circle skeleton can be used for any component where you want to show a circle skeleton (e.g. an avatar).
+
+<Canvas withToolbar sourceState="shown" of={Stories.Circle} />
+
+### Inline
+
+The inline skeleton can be used for any component where you want to show a skeleton that is inline with another element or just does not take up the full width of the container.
+
+<Canvas withToolbar sourceState="shown" of={Stories.Inline} />
+
+## Making a skeleton
+
+There are two ways to make a skeleton loader. You can use the `Skeleton` component directly, or you can use the `skeleton()` scss mixin.
+
+### Using the `Skeleton` component
+
+The `Skeleton` component wraps around the elmement you want to show the skeleton for. By default it will be a full-width rectangle the same height as the element it wraps around.
+
+You can use the `isInline` prop to make the skeleton also take the same width as the element it wraps around by making it display as `inline-block`.
+
+You should wrap the `Skeleton` component around each element in your component. Not the entire component itself. (See [Good](?path=/story/components-feedback-skeleton--good-example) and [Bad](?path=/story/components-feedback-skeleton--bad-example) examples in the menu).
+
+If you don't know exactly what the loaded content will look like, you can mock a skeleton together to approximate the loaded content and then use your components loaded state to either show
+the real content or the skeleton.
+
+### Using the `skeleton()` mixin
+
+The `skeleton()` mixin is an scss mixin that you can use directly in your components to create a skeleton. To use it, simply include the mixin inside the element you want to show the skeleton for.
+It will apply the skeleton automatically, so you may want to use a class to toggle the skeleton on and off.
+
+The main difference between using the component and the mixin is that the component wraps around the item to be loaded and the mixin goes inside the item to be loaded.
+
+<Tip type="warning">
+  You may have to add a bit of custom styling to a skeleton to prevent content
+  from jumping around when the skeleton is toggled on and off. You can use the
+  `className` prop to add your own css to any skeleton
+</Tip>
+
+## Components that use skeletons
+
+Some components already have skeletons built in. You can use these skeletons by setting the `isLoading` prop to `true` on the component. The component will then show a skeleton instead of the real content.
+
+Here is a list of components that have skeletons built in (this list may not be exhaustive):
+
+- Avatar
+- ListItem
+- Button (Uses a different implementation for loading but is still effectively a skeleton)

@@ -1,0 +1,21 @@
+.hero-image {
+  border-radius: $border-radius;
+  width: 100%;
+}
+
+.small-h2 {
+  @include type.heading-small();
+
+  margin-bottom: margin(2);
+}
+
+.large-h2 {
+  @include type.heading-large();
+
+  margin-bottom: margin(2);
+  text-align: center;
+
+  em {
+    font-style: italic;
+  }
+}

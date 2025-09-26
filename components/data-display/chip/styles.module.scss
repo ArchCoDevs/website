@@ -1,0 +1,23 @@
+.chip {
+  @include type.small-text();
+
+  align-items: center;
+  background-color: col.$secondary;
+  border-radius: $border-radius;
+  color: col.$light;
+  display: flex;
+  gap: spacing(0.8);
+  inline-size: fit-content;
+  line-height: 1.2;
+  max-height: 100%;
+  padding: padding(0.6) padding(1.2) padding(0.5);
+  white-space: nowrap;
+}
+
+.with-icon {
+  svg {
+    height: 16px;
+    margin-bottom: 2px;
+    width: 16px;
+  }
+}

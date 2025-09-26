@@ -1,0 +1,99 @@
+.search-button {
+  svg {
+    fill: col.$light;
+  }
+}
+
+.map-view {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 1fr;
+  height: 100vh;
+  width: 100%;
+}
+
+.map-view-header {
+  border-bottom: 1px solid col.$grey-500;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.map-view-header-search {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  max-width: 500px;
+}
+
+.map-view-header-filter {
+  svg {
+    fill: col.$primary;
+  }
+}
+
+.map-view-sidebar {
+  height: calc(100% - 80px);
+  overflow: scroll;
+  padding: 0;
+  top: 80px;
+  width: 100vw;
+
+  @include util.mq(bp.$medium-small) {
+    width: 400px;
+  }
+}
+
+.back-button {
+  svg {
+    fill: col.$primary;
+    height: 15px;
+    transform: rotate(-90deg);
+    width: 15px;
+  }
+}
+
+.map-view-main {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+
+.map-view-main.sidebar-open {
+  display: none;
+  transform: translateX(400px);
+  width: calc(100% - 400px);
+
+  @include util.mq(bp.$medium-small) {
+    display: block;
+  }
+}
+
+.map-view-main-back-button {
+  left: 10px;
+  position: absolute;
+  top: 10px;
+  z-index: 1;
+
+  svg {
+    fill: col.$primary;
+    height: 12px;
+    width: 12px;
+  }
+
+  &:hover {
+    svg {
+      @include animate.wobble();
+    }
+  }
+}
+
+.advanced-search {
+  overflow-y: auto;
+
+  fieldset:first-of-type {
+    > span:first-of-type {
+      display: none;
+    }
+  }
+}
